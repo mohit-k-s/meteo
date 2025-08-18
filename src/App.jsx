@@ -400,53 +400,57 @@ function App() {
   return (
     <div className="h-screen flex flex-col">
       {/* Terminal Header */}
-      <header className="terminal-header px-4 py-3">
+      <header className="terminal-panel border-b p-2 sm:p-4">
         <div className="flex items-center justify-between">
-          <div className="flex items-center space-x-3">
-            <div className="text-2xl terminal-text">🚇</div>
-            <div>
-              <h1 className="text-xl font-bold terminal-text">METEO.SYS v1.0</h1>
-              <p className="text-sm terminal-text opacity-75 font-mono">
-                [{metroData.total_lines}] LINES • [256] NODES
-              </p>
-            </div>
-          </div>
+          <div className="flex items-center space-x-2 sm:space-x-4">
+            {/* Logo - responsive */}
+            <h1 className="text-lg sm:text-xl terminal-text font-mono font-bold">
+              <span className="sm:hidden">METEO</span>
+              <span className="hidden sm:inline">METEO.SYS</span>
+            </h1>
 
-          <div className="flex items-center space-x-4">
-            {/* Route Planning Toggle */}
+            {/* Route Planning Toggle - hidden on mobile */}
             <button
               onClick={toggleRouteMode}
-              className={`text-sm terminal-text font-mono border border-current px-2 py-1 ${routeMode ? 'bg-opacity-20 bg-white' : ''
+              className={`hidden sm:inline-block text-sm terminal-text font-mono border border-current px-2 py-1 ${routeMode ? 'bg-opacity-20 bg-white' : ''
                 }`}
             >
               {routeMode ? '[ROUTE_MODE:ON]' : '[ROUTE_PLANNER]'}
             </button>
 
-            {/* Terminal Search */}
+            {/* Mobile Route Toggle */}
+            <button
+              onClick={toggleRouteMode}
+              className={`sm:hidden text-xs terminal-text font-mono border border-current px-1 py-1 ${routeMode ? 'bg-opacity-20 bg-white' : ''
+                }`}
+            >
+              {routeMode ? '[ROUTE]' : '[PLAN]'}
+            </button>
+          </div>
+
+          <div className="flex items-center space-x-2">
+            {/* Search - responsive */}
             <div className="relative">
-              <div className="flex items-center">
-                <span className="text-sm terminal-text font-mono mr-2">[SEARCH]</span>
-                <input
-                  type="text"
-                  value={searchQuery}
-                  onChange={(e) => handleSearch(e.target.value)}
-                  placeholder={routeMode ? (boardingNode ? "DROP_NODE" : "BOARD_NODE") : "NODE_NAME OR CODE"}
-                  className="bg-transparent border border-current text-sm terminal-text font-mono px-2 py-1 w-48 focus:outline-none focus:border-opacity-100 placeholder-opacity-50"
-                  style={{ borderColor: 'var(--terminal-green)' }}
-                />
-                {searchQuery && (
-                  <button
-                    onClick={handleClearSearch}
-                    className="ml-1 text-xs terminal-text hover:opacity-75"
-                  >
-                    [X]
-                  </button>
-                )}
-              </div>
+              <input
+                type="text"
+                value={searchQuery}
+                onChange={(e) => handleSearch(e.target.value)}
+                placeholder={routeMode ? (boardingNode ? "Drop station" : "Start station") : "Search"}
+                className="bg-transparent border border-current text-xs sm:text-sm terminal-text font-mono px-2 py-1 w-24 sm:w-48 focus:outline-none focus:border-opacity-100 placeholder-opacity-50"
+                style={{ borderColor: 'var(--terminal-green)' }}
+              />
+              {searchQuery && (
+                <button
+                  onClick={handleClearSearch}
+                  className="ml-1 text-xs terminal-text hover:opacity-75"
+                >
+                  ✕
+                </button>
+              )}
 
               {/* Search Results Dropdown */}
               {showSearchResults && searchResults.length > 0 && (
-                <div className="absolute top-full left-0 right-0 mt-1 terminal-panel border z-50 max-h-64 overflow-y-auto">
+                <div className="absolute top-full right-0 mt-1 terminal-panel border z-50 max-h-64 overflow-y-auto w-64">
                   <div className="p-2">
                     <div className="text-xs terminal-text opacity-75 mb-2 font-mono">
                       [{searchResults.length}] NODES_FOUND
@@ -480,7 +484,7 @@ function App() {
 
               {/* No Results */}
               {showSearchResults && searchResults.length === 0 && searchQuery.trim() && (
-                <div className="absolute top-full left-0 right-0 mt-1 terminal-panel border z-50">
+                <div className="absolute top-full right-0 mt-1 terminal-panel border z-50 w-64">
                   <div className="p-3 text-center">
                     <div className="text-sm terminal-text opacity-75 font-mono">
                       [NO_NODES_FOUND]
@@ -490,16 +494,10 @@ function App() {
               )}
             </div>
 
-            {userLocation && (
-              <div className="text-sm terminal-text font-mono border border-current px-2 py-1">
-                [GPS:ACTIVE]
-              </div>
-            )}
-            {isInTunnel && (
-              <div className="text-sm terminal-text font-mono border border-current px-2 py-1 animate-pulse">
-                [TUNNEL_MODE]
-              </div>
-            )}
+            {/* GPS/Tunnel Status - compact */}
+            <div className="text-xs sm:text-sm terminal-text font-mono border border-current px-1 sm:px-2 py-1">
+              {isInTunnel ? '[TUNNEL]' : (userLocation ? '[GPS]' : '[NO_GPS]')}
+            </div>
           </div>
         </div>
       </header>
