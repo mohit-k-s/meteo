@@ -1,0 +1,10 @@
+node_modules/
+dist/
+dmrc.json
+assets/
+backup/
+.env.local
+
+dmrc-consolidator.js
+batch-coordinate-populator.js
+vision.md

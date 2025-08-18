@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Courier+Prime:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Terminal/Retro Theme Variables */
+:root {
+  --terminal-bg: #0a0a0a;
+  --terminal-bg-alt: #1a1a1a;
+  --terminal-green: #00ff41;
+  --terminal-amber: #ffb000;
+  --terminal-red: #ff4444;
+  --terminal-blue: #4da6ff;
+  --terminal-cyan: #00ffff;
+  --terminal-purple: #cc99ff;
+  --terminal-text: #00ff41;
+  --terminal-text-dim: #66ff66;
+  --terminal-border: #333333;
+  --scanline-color: rgba(0, 255, 65, 0.03);
+}
+
+/* Base styles */
+@layer base {
+  html {
+    height: 100%;
+    background: var(--terminal-bg);
+  }
+  
+  body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'JetBrains Mono', 'Courier Prime', 'Courier New', monospace;
+    background: var(--terminal-bg);
+    color: var(--terminal-text);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow: hidden;
+  }
+
+  #root {
+    height: 100%;
+    background: var(--terminal-bg);
+    position: relative;
+  }
+
+  /* Terminal scanlines effect */
+  #root::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      var(--scanline-color) 2px,
+      var(--scanline-color) 4px
+    );
+    pointer-events: none;
+    z-index: 1000;
+  }
+
+  /* CRT flicker effect */
+  #root::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--terminal-bg);
+    opacity: 0.02;
+    animation: flicker 0.15s infinite linear alternate;
+    pointer-events: none;
+    z-index: 999;
+  }
+}
+
+/* Terminal Components */
+@layer components {
+  .terminal-panel {
+    background: var(--terminal-bg-alt);
+    border: 2px solid var(--terminal-green);
+    border-radius: 0;
+    box-shadow: 
+      0 0 20px rgba(0, 255, 65, 0.3),
+      inset 0 0 20px rgba(0, 255, 65, 0.1);
+    animation: slideUp 0.3s ease-out, terminalGlow 2s ease-in-out infinite alternate;
+  }
+  
+  .terminal-header {
+    background: var(--terminal-bg-alt);
+    border-bottom: 1px solid var(--terminal-green);
+    box-shadow: 0 0 10px rgba(0, 255, 65, 0.2);
+  }
+  
+  .terminal-button {
+    background: transparent;
+    border: 1px solid var(--terminal-green);
+    color: var(--terminal-green);
+    font-family: 'JetBrains Mono', monospace;
+    transition: all 0.2s ease;
+  }
+  
+  .terminal-button:hover {
+    background: var(--terminal-green);
+    color: var(--terminal-bg);
+    box-shadow: 0 0 10px rgba(0, 255, 65, 0.5);
+  }
+  
+  .tunnel-overlay {
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(4px);
+    border: 2px solid var(--terminal-amber);
+    animation: terminalPulse 1.5s ease-in-out infinite;
+  }
+
+  .station-marker {
+    filter: drop-shadow(0 0 3px currentColor);
+  }
+}
+
+/* Terminal Animations */
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes terminalGlow {
+  0% {
+    box-shadow: 
+      0 0 20px rgba(0, 255, 65, 0.3),
+      inset 0 0 20px rgba(0, 255, 65, 0.1);
+  }
+  100% {
+    box-shadow: 
+      0 0 30px rgba(0, 255, 65, 0.5),
+      inset 0 0 30px rgba(0, 255, 65, 0.2);
+  }
+}
+
+@keyframes terminalPulse {
+  0%, 100% {
+    border-color: var(--terminal-amber);
+    box-shadow: 0 0 20px rgba(255, 176, 0, 0.4);
+  }
+  50% {
+    border-color: var(--terminal-red);
+    box-shadow: 0 0 20px rgba(255, 68, 68, 0.4);
+  }
+}
+
+@keyframes flicker {
+  0% { opacity: 0.02; }
+  100% { opacity: 0.04; }
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 255, 65, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 15px rgba(0, 255, 65, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(0, 255, 65, 0);
+  }
+}
+
+/* Terminal text effects */
+.terminal-text {
+  text-shadow: 0 0 5px currentColor;
+  animation: textGlow 2s ease-in-out infinite alternate;
+}
+
+@keyframes textGlow {
+  0% { text-shadow: 0 0 5px currentColor; }
+  100% { text-shadow: 0 0 10px currentColor, 0 0 15px currentColor; }
+}

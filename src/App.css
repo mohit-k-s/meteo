@@ -1,0 +1,148 @@
+/* Terminal/Retro Meteo App Styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'JetBrains Mono', 'Courier Prime', 'Courier New', monospace;
+  background: var(--terminal-bg);
+  color: var(--terminal-text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  height: 100vh;
+  width: 100vw;
+  background: var(--terminal-bg);
+}
+
+/* Terminal Map Styles */
+.leaflet-container {
+  height: 100%;
+  width: 100%;
+  background: var(--terminal-bg) !important;
+  border: 1px solid var(--terminal-green);
+  box-shadow: inset 0 0 20px rgba(0, 255, 65, 0.1);
+}
+
+.leaflet-tile {
+  filter: grayscale(100%) contrast(1.2) brightness(0.3) sepia(100%) hue-rotate(90deg);
+}
+
+.leaflet-control-container {
+  filter: invert(1) hue-rotate(180deg);
+}
+
+/* Terminal Station Markers */
+.custom-station-marker {
+  background: transparent;
+  border: none;
+  filter: drop-shadow(0 0 3px var(--terminal-green));
+}
+
+.user-location-marker {
+  background: transparent;
+  border: none;
+  animation: pulse 2s infinite;
+}
+
+/* Terminal Loading States */
+.terminal-loading {
+  background: var(--terminal-bg-alt);
+  border: 2px solid var(--terminal-green);
+  animation: terminalBoot 2s ease-in-out infinite;
+}
+
+.loading-spinner {
+  animation: terminalSpin 1s linear infinite;
+  color: var(--terminal-green);
+  filter: drop-shadow(0 0 5px currentColor);
+}
+
+.terminal-error {
+  background: var(--terminal-bg-alt);
+  border: 2px solid var(--terminal-red);
+  color: var(--terminal-red);
+  animation: errorFlash 1s ease-in-out infinite alternate;
+}
+
+/* Terminal Responsive Design */
+@media (max-width: 768px) {
+  .terminal-panel {
+    margin: 0.5rem;
+  }
+
+  .terminal-text {
+    font-size: 0.875rem;
+  }
+}
+
+/* Terminal Animations */
+@keyframes terminalBoot {
+
+  0%,
+  100% {
+    border-color: var(--terminal-green);
+    box-shadow: 0 0 10px rgba(0, 255, 65, 0.3);
+  }
+
+  50% {
+    border-color: var(--terminal-text-dim);
+    box-shadow: 0 0 20px rgba(0, 255, 65, 0.5);
+  }
+}
+
+@keyframes terminalSpin {
+  from {
+    transform: rotate(0deg);
+    filter: drop-shadow(0 0 5px var(--terminal-green));
+  }
+
+  to {
+    transform: rotate(360deg);
+    filter: drop-shadow(0 0 10px var(--terminal-green));
+  }
+}
+
+@keyframes errorFlash {
+  0% {
+    border-color: var(--terminal-red);
+    box-shadow: 0 0 10px rgba(255, 68, 68, 0.3);
+  }
+
+  100% {
+    border-color: #ff8888;
+    box-shadow: 0 0 20px rgba(255, 68, 68, 0.6);
+  }
+}
+
+/* Metro Line Colors - Terminal Style */
+.line-red {
+  color: var(--terminal-red);
+}
+
+.line-blue {
+  color: var(--terminal-blue);
+}
+
+.line-green {
+  color: #00cc33;
+}
+
+.line-yellow {
+  color: var(--terminal-amber);
+}
+
+.line-purple {
+  color: var(--terminal-purple);
+}
+
+.line-cyan {
+  color: var(--terminal-cyan);
+}
+
+.line-rapid_metro {
+  color: #00aaff;
+}
