@@ -67,6 +67,11 @@ I don't think i will need that
 - OpenStreetMap contributors for geographic data
 - React and Leaflet.js communities
 
+## Note for the file dmrc.json
+This was populated via scipts and is available as a public infrastructure information. For some i had to use my own data as i could not find it in the public domain. I used google maps and corrected each and every coordinate. These are all correct as of now.
+Hope it helps someone else 
+
+
 ---
 
-**Built on weekend**
+**Built in a day**
