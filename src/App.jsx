@@ -22,19 +22,14 @@ function App() {
   useEffect(() => {
     const loadMetroData = async () => {
       try {
-        // First try to load from environment variable
-        const envData = import.meta.env.VITE_METEO_DATA
-        if (envData) {
-          const data = JSON.parse(envData)
+        // Try to fetch from API endpoint that reads process.env
+        const response = await fetch('/api/metro-data')
+        if (response.ok) {
+          const data = await response.json()
           setMetroData(data)
           setLoading(false)
           return
         }
-        
-        if (!fallbackResponse.ok) {
-          throw new Error('Failed to load metro data')
-        }
-        const data = await fallbackResponse.json()
         setMetroData(data)
         setLoading(false)
       } catch (err) {
@@ -516,7 +511,7 @@ function App() {
           <div className="space-y-1">
             {metroData.lines.map((line) => (
               <div key={line.id} className="flex items-center gap-2">
-                <div 
+                <div
                   className="w-4 h-2 border border-gray-400"
                   style={{ backgroundColor: line.color }}
                 ></div>
@@ -526,7 +521,7 @@ function App() {
               </div>
             ))}
           </div>
-          
+
           {/* Route Mode Legend */}
           {routeMode && (
             <div className="mt-3 pt-2 border-t border-current">
