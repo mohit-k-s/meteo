@@ -18,6 +18,7 @@ function App() {
   const [selectedRoute, setSelectedRoute] = useState(null)
   const [routeMode, setRouteMode] = useState(false)
   const [showLegend, setShowLegend] = useState(true)
+  const [showMobileRoutes, setShowMobileRoutes] = useState(false)
 
   // Load DMRC data
   useEffect(() => {
@@ -418,14 +419,6 @@ function App() {
               {routeMode ? '[ROUTE_MODE:ON]' : '[ROUTE_PLANNER]'}
             </button>
 
-            {/* Mobile Route Toggle */}
-            <button
-              onClick={toggleRouteMode}
-              className={`sm:hidden text-xs terminal-text font-mono border border-current px-1 py-1 ${routeMode ? 'bg-opacity-20 bg-white' : ''
-                }`}
-            >
-              {routeMode ? '[ROUTE]' : '[PLAN]'}
-            </button>
           </div>
 
           <div className="flex items-center space-x-2">
@@ -572,6 +565,81 @@ function App() {
           selectedRoute={selectedRoute}
           routeMode={routeMode}
         />
+
+        {/* Mobile Route Toggle - Bottom Right */}
+        <div className="sm:hidden fixed bottom-4 right-4 z-[1001] flex flex-col gap-2">
+          <button
+            onClick={toggleRouteMode}
+            className={`text-xs terminal-text font-mono border border-current px-3 py-2 bg-black bg-opacity-90 ${routeMode ? 'bg-opacity-20 bg-white' : ''
+              }`}
+          >
+            {routeMode ? '[ROUTE]' : '[PLAN]'}
+          </button>
+          
+          {/* Mobile Routes Button */}
+          {routes.length > 1 && (
+            <button
+              onClick={() => setShowMobileRoutes(!showMobileRoutes)}
+              className="text-xs terminal-text font-mono border border-current px-3 py-2 bg-black bg-opacity-90"
+            >
+              [{routes.length} ROUTES]
+            </button>
+          )}
+        </div>
+
+        {/* Mobile Routes Panel */}
+        {showMobileRoutes && routes.length > 0 && (
+          <div className="sm:hidden fixed bottom-20 right-4 left-4 z-[1000] terminal-panel p-3 max-h-60 overflow-y-auto">
+            <div className="flex items-center justify-between mb-2">
+              <div className="text-xs terminal-text opacity-75 font-mono">
+                [{routes.length}] ROUTES_FOUND
+              </div>
+              <button
+                onClick={() => setShowMobileRoutes(false)}
+                className="text-xs terminal-text font-mono hover:text-red-400"
+              >
+                ✕
+              </button>
+            </div>
+
+            {routes.map((route, index) => (
+              <div
+                key={index}
+                onClick={() => {
+                  setSelectedRoute(route)
+                  setShowMobileRoutes(false)
+                }}
+                className={`cursor-pointer border border-current p-2 mb-2 last:mb-0 ${selectedRoute === route ? 'bg-opacity-20 bg-white' : 'hover:bg-opacity-10 hover:bg-white'
+                  }`}
+              >
+                <div className="flex items-center justify-between mb-1">
+                  <span className="text-sm terminal-text font-mono font-bold">
+                    [ROUTE_{index + 1}]
+                  </span>
+                  <div className="text-xs terminal-text opacity-75 font-mono">
+                    {route.totalStations} NODES • {route.interchanges} INTERCHANGES
+                  </div>
+                </div>
+
+                <div className="flex flex-wrap gap-1">
+                  {route.lines.map((line, lineIndex) => (
+                    <span
+                      key={lineIndex}
+                      className="text-xs font-mono px-1 border"
+                      style={{
+                        borderColor: line.color,
+                        color: line.color,
+                        textShadow: `0 0 3px ${line.color}`,
+                      }}
+                    >
+                      [{line.name.toUpperCase()}]
+                    </span>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        )}
       </main>
 
       {/* Route Planning Status Panel - Hidden on mobile */}
