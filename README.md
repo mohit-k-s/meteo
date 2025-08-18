@@ -44,27 +44,6 @@ An intelligent browser-based metro navigation PWA that provides **real-time GPS 
 - Node.js (v16 or higher)
 - npm or yarn
 
-### Installation
-
-1. **Clone the repository**
-   ```bash
-   git clone <repository-url>
-   cd meteo
-   ```
-
-2. **Install dependencies**
-   ```bash
-   npm install
-   ```
-
-3. **Start development server**
-   ```bash
-   npm run dev
-   ```
-
-4. **Open in browser**
-   - Navigate to `http://localhost:3000`
-   - Allow location permissions for GPS tracking
 
 ### Building for Production
 
@@ -72,33 +51,6 @@ An intelligent browser-based metro navigation PWA that provides **real-time GPS 
 npm run build
 npm run preview
 ```
-
-## Project Structure
-
-```
-meteo/
-├── src/
-│   ├── components/
-│   │   └── MetroMap.jsx      # Interactive metro map component
-│   ├── App.jsx               # Main application component
-│   ├── main.jsx              # Application entry point
-│   └── index.css             # Global styles
-├── assets/
-│   └── intersections.json    # Interchange station data
-├── dmrc.json                 # Delhi Metro network data
-├── dmrc-consolidator.js      # Data processing script
-├── fix-coordinates.js        # Coordinate correction utilities
-├── fix-station-codes.js      # Station code standardization
-└── index.html                # PWA entry point
-```
-
-## Data Processing Scripts
-
-The project includes several Node.js scripts for processing and cleaning metro data:
-
-- **`dmrc-consolidator.js`** - Consolidates metro line data into unified format
-- **`fix-coordinates.js`** - Corrects and validates station coordinates
-- **`fix-station-codes.js`** - Standardizes station codes across lines
 
 ## Current Coverage
 
@@ -115,20 +67,6 @@ The project includes several Node.js scripts for processing and cleaning metro d
 3. **Tap stations** to view detailed information
 4. **Navigate confidently** with tunnel detection and offline support
 
-## Development
-
-### Adding New Metro Networks
-
-1. Create data files in GeoJSON format following the DMRC structure
-2. Add line configurations in the consolidator script
-3. Update the data loading logic in `App.jsx`
-
-### Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Submit a pull request
 
 ## Roadmap
 

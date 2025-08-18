@@ -17,6 +17,7 @@ function App() {
   const [routes, setRoutes] = useState([])
   const [selectedRoute, setSelectedRoute] = useState(null)
   const [routeMode, setRouteMode] = useState(false)
+  const [showLegend, setShowLegend] = useState(true)
 
   // Load DMRC data
   useEffect(() => {
@@ -505,44 +506,62 @@ function App() {
 
       {/* Map */}
       <main className="flex-1 relative">
-        {/* Map Legend */}
-        <div className="absolute left-4 top-20 z-[1000] terminal-panel border p-3 max-h-96 overflow-y-auto">
-          <div className="text-xs terminal-text font-mono font-bold mb-2">[MAP_LEGEND]</div>
-          <div className="space-y-1">
-            {metroData.lines.map((line) => (
-              <div key={line.id} className="flex items-center gap-2">
-                <div
-                  className="w-4 h-2 border border-gray-400"
-                  style={{ backgroundColor: line.color }}
-                ></div>
-                <span className="text-xs terminal-text font-mono truncate">
-                  {line.name}
-                </span>
-              </div>
-            ))}
-          </div>
+        {/* Legend Toggle Button */}
+        <button
+          onClick={() => setShowLegend(!showLegend)}
+          className="absolute left-4 top-20 z-[1001] text-xs terminal-text font-mono border border-current px-2 py-1 bg-black bg-opacity-80"
+        >
+          {showLegend ? '[HIDE_LEGEND]' : '[SHOW_LEGEND]'}
+        </button>
 
-          {/* Route Mode Legend */}
-          {routeMode && (
-            <div className="mt-3 pt-2 border-t border-current">
-              <div className="text-xs terminal-text font-mono font-bold mb-2">[ROUTE_LEGEND]</div>
-              <div className="space-y-1">
-                <div className="flex items-center gap-2">
-                  <div className="w-4 h-2 bg-white border border-gray-400"></div>
-                  <span className="text-xs terminal-text font-mono">Selected Route</span>
+        {/* Map Legend */}
+        {showLegend && (
+          <div className="absolute left-4 top-32 z-[1000] terminal-panel border p-3 w-48 sm:w-56 md:w-64 max-h-80 sm:max-h-96 overflow-y-auto">
+            <div className="flex items-center justify-between mb-2">
+              <div className="text-xs terminal-text font-mono font-bold">[MAP_LEGEND]</div>
+              <button
+                onClick={() => setShowLegend(false)}
+                className="text-xs terminal-text font-mono hover:text-red-400"
+              >
+                ✕
+              </button>
+            </div>
+            <div className="space-y-1">
+              {metroData.lines.map((line) => (
+                <div key={line.id} className="flex items-center gap-2">
+                  <div
+                    className="w-4 h-2 border border-gray-400 flex-shrink-0"
+                    style={{ backgroundColor: line.color }}
+                  ></div>
+                  <span className="text-xs terminal-text font-mono truncate">
+                    {line.name}
+                  </span>
                 </div>
-                <div className="flex items-center gap-2">
-                  <div className="w-3 h-3 bg-green-500 rounded-full border border-gray-400"></div>
-                  <span className="text-xs terminal-text font-mono">Start Station</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <div className="w-3 h-3 bg-red-500 rounded-full border border-gray-400"></div>
-                  <span className="text-xs terminal-text font-mono">End Station</span>
+              ))}
+            </div>
+
+            {/* Route Mode Legend */}
+            {routeMode && (
+              <div className="mt-3 pt-2 border-t border-current">
+                <div className="text-xs terminal-text font-mono font-bold mb-2">[ROUTE_LEGEND]</div>
+                <div className="space-y-1">
+                  <div className="flex items-center gap-2">
+                    <div className="w-4 h-2 bg-white border border-gray-400 flex-shrink-0"></div>
+                    <span className="text-xs terminal-text font-mono">Selected Route</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <div className="w-3 h-3 bg-green-500 rounded-full border border-gray-400 flex-shrink-0"></div>
+                    <span className="text-xs terminal-text font-mono">Start Station</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <div className="w-3 h-3 bg-red-500 rounded-full border border-gray-400 flex-shrink-0"></div>
+                    <span className="text-xs terminal-text font-mono">End Station</span>
+                  </div>
                 </div>
               </div>
-            </div>
-          )}
-        </div>
+            )}
+          </div>
+        )}
 
         <MetroMap
           metroData={metroData}
