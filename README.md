@@ -1,4 +1,4 @@
-# Meteo 🌐🚇
+# Meteo
 
 Hobby Project
 
@@ -6,21 +6,20 @@ Hobby Project
 
 I am still working on data about elevation and stuff but the core is working ig.
 
-An intelligent browser-based metro navigation PWA that provides **real-time GPS tracking** inside metro systems. Know exactly where you are on your metro journey without relying on announcements or static maps.
 
-## Features
+## Features (added already or to be added)
 
-### 🚇 **Live Route Tracking**
+### **Live Route Tracking**
 - GPS-based real-time position tracking on metro routes
 - Automatic tunnel detection when GPS signal is lost
 - Visual indicators for underground/elevated stations
 
-### 🔄 **Smart Interchange Handling**
+### **Smart Interchange Handling**
 - Detects stations with multiple metro lines
 - Prompts users to select their line at interchange stations
 - Auto-detection based on movement patterns
 
-### 📍 **Detailed Station Information**
+### **Detailed Station Information**
 - Station codes, names, and line information
 - Entry/exit gate details
 - Facilities (washrooms, lifts, parking)
@@ -34,27 +33,12 @@ An intelligent browser-based metro navigation PWA that provides **real-time GPS 
 - **PWA**: Vite PWA plugin
 - **Data**: GeoJSON format for metro network data
 
-## Getting Started
-
-### Prerequisites
-- Node.js (v16 or higher)
-- npm or yarn
-
-
-### Building for Production
-
-```bash
-npm run build
-npm run preview
-```
-
 ## Current Coverage
 
 ### Delhi Metro (DMRC)
-- ✅ **10 Lines** with complete station data
-- ✅ **285+ Stations** with coordinates and metadata
-- ✅ **Interchange detection** and line mapping
-- ✅ **Station facilities** and depth information
+- **10 Lines** with complete station data
+- **250+ Stations** with coordinates and metadata
+- **Interchange detection** and line mapping
 
 ## Usage
 
@@ -70,10 +54,11 @@ npm run preview
 - [ ] **Multi-city support** 
 - [ ] **Community contributions** for station metadata
 - [ ] **Real-time service updates** integration
+- [] **Station facilities** and depth information
 
 ## License
 
-MIT License - see LICENSE file for details
+I don't think i will need that
 
 ## Acknowledgments
 
