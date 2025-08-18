@@ -504,17 +504,17 @@ function App() {
 
       {/* Map */}
       <main className="flex-1 relative">
-        {/* Legend Toggle Button */}
+        {/* Legend Toggle Button - Hidden on mobile */}
         <button
           onClick={() => setShowLegend(!showLegend)}
-          className="absolute left-4 top-20 z-[1001] text-xs terminal-text font-mono border border-current px-2 py-1 bg-black bg-opacity-80"
+          className="hidden sm:block absolute left-4 top-20 z-[1001] text-xs terminal-text font-mono border border-current px-2 py-1 bg-black bg-opacity-80"
         >
           {showLegend ? '[HIDE_LEGEND]' : '[SHOW_LEGEND]'}
         </button>
 
-        {/* Map Legend */}
+        {/* Map Legend - Hidden on mobile */}
         {showLegend && (
-          <div className="absolute left-4 top-32 z-[1000] terminal-panel border p-3 w-48 sm:w-56 md:w-64 max-h-80 sm:max-h-96 overflow-y-auto">
+          <div className="hidden sm:block absolute left-4 top-32 z-[1000] terminal-panel border p-3 w-48 sm:w-56 md:w-64 max-h-80 sm:max-h-96 overflow-y-auto">
             <div className="flex items-center justify-between mb-2">
               <div className="text-xs terminal-text font-mono font-bold">[MAP_LEGEND]</div>
               <button
@@ -574,9 +574,9 @@ function App() {
         />
       </main>
 
-      {/* Route Planning Status Panel */}
+      {/* Route Planning Status Panel - Hidden on mobile */}
       {routeMode && (boardingNode || droppingNode) && (
-        <div className="absolute top-20 left-4 terminal-panel p-3 z-[1000] min-w-64">
+        <div className="hidden sm:block absolute top-20 left-4 terminal-panel p-3 z-[1000] min-w-64">
           <div className="text-xs terminal-text opacity-75 mb-2 font-mono">[ROUTE_PLANNING]</div>
 
           {boardingNode && (
@@ -616,9 +616,9 @@ function App() {
         </div>
       )}
 
-      {/* Route Options Panel */}
+      {/* Route Options Panel - Hidden on mobile */}
       {routes.length > 0 && (
-        <div className="absolute top-20 right-4 terminal-panel p-3 z-[1000] max-w-80">
+        <div className="hidden sm:block absolute top-20 right-4 terminal-panel p-3 z-[1000] max-w-80">
           <div className="text-xs terminal-text opacity-75 mb-2 font-mono">
             [{routes.length}] ROUTES_FOUND
           </div>
