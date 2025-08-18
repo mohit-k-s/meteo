@@ -54,7 +54,7 @@ I am still working on data about elevation and stuff but the core is working ig.
 - [ ] **Multi-city support** 
 - [ ] **Community contributions** for station metadata
 - [ ] **Real-time service updates** integration
-- [] **Station facilities** and depth information
+- [ ] **Station facilities** and depth information
 
 ## License
 
