@@ -1,9 +1,10 @@
 # Meteo 🌐🚇
 
-Right now i am still working on data and consolidating it. 
+Hobby Project
 
-But below is the goal
+![Meteo](./pictures//meteo.png)
 
+I am still working on data about elevation and stuff but the core is working ig.
 
 An intelligent browser-based metro navigation PWA that provides **real-time GPS tracking** inside metro systems. Know exactly where you are on your metro journey without relying on announcements or static maps.
 
