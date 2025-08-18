@@ -26,11 +26,6 @@ An intelligent browser-based metro navigation PWA that provides **real-time GPS 
 - Facilities (washrooms, lifts, parking)
 - Nearby landmarks
 
-### 📱 **PWA Experience**
-- Works offline with cached route data
-- Installable on mobile devices
-- Responsive design optimized for mobile use
-
 ## Tech Stack
 
 - **Frontend**: React 18 with Vite
@@ -71,10 +66,9 @@ npm run preview
 
 ## Roadmap
 
-- [ ] **Enhanced tunnel detection** with more sophisticated algorithms
-- [ ] **Multi-city support** (Bangalore, Mumbai metros)
+- [ ] **Enhanced tunnel detection**
+- [ ] **Multi-city support** 
 - [ ] **Community contributions** for station metadata
-- [ ] **AR features** for exit navigation
 - [ ] **Real-time service updates** integration
 
 ## License
@@ -89,4 +83,4 @@ MIT License - see LICENSE file for details
 
 ---
 
-**Built with ❤️ for better metro navigation**
+**Built on weekend**
