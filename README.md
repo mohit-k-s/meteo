@@ -2,6 +2,9 @@
 
 ![Meteo](./pictures//meteo.png)
 
+The name is not at all derived from météo (which is french for weather) . I just liked the name..
+
+
 Meteo is a hobby project , I am still working on data about elevation and stuff but the core is working ig.
 
 
