@@ -30,22 +30,7 @@ function App() {
           setLoading(false)
           return
         }
-
-        // Fallback to local dmrc.json file
-        try {
-          const response = await fetch('/dmrc.json')
-          if (response.ok) {
-            const data = await response.json()
-            setMetroData(data)
-            setLoading(false)
-            return
-          }
-        } catch (localErr) {
-          console.warn('Local dmrc.json not found, trying sample data')
-        }
-
-        // Final fallback to sample data
-        const fallbackResponse = await fetch('/dmrc-sample.json')
+        
         if (!fallbackResponse.ok) {
           throw new Error('Failed to load metro data')
         }
