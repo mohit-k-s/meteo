@@ -1,10 +1,8 @@
 # Meteo
 
-Hobby Project
-
 ![Meteo](./pictures//meteo.png)
 
-I am still working on data about elevation and stuff but the core is working ig.
+Meteo is a hobby project , I am still working on data about elevation and stuff but the core is working ig.
 
 
 ## Features (added already or to be added)
