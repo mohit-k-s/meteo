@@ -1,0 +1,3736 @@
+{
+    "network": "DMRC",
+    "network_name": "Delhi Metro Rail Corporation",
+    "last_updated": "2025-08-18T07:31:11.443Z",
+    "total_lines": 10,
+    "total_stations": 284,
+    "lines": [
+        {
+            "id": "airport_express",
+            "name": "Airport Express",
+            "color": "#FF6600",
+            "stations": [
+                {
+                    "id": "new_delhi",
+                    "name": "New Delhi",
+                    "code": "NDLS",
+                    "position": {
+                        "lat": 28.6432,
+                        "lng": 77.2232
+                    },
+                    "depth": "underground",
+                    "is_interchange": true,
+                    "order": 0,
+                    "interchange_lines": [
+                        "airport_express",
+                        "yellow_line"
+                    ]
+                },
+                {
+                    "id": "shivaji_stadium",
+                    "name": "Shivaji Stadium",
+                    "code": "SHST",
+                    "position": {
+                        "lat": 28.6408,
+                        "lng": 77.2194
+                    },
+                    "depth": "underground",
+                    "is_interchange": false,
+                    "order": 1
+                },
+                {
+                    "id": "dhaula_kuan",
+                    "name": "Dhaula Kuan",
+                    "code": "DHKU",
+                    "position": {
+                        "lat": 28.5933,
+                        "lng": 77.1722
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 2
+                },
+                {
+                    "id": "delhi_aerocity",
+                    "name": "Delhi Aerocity",
+                    "code": "DEAE",
+                    "position": {
+                        "lat": 28.5562,
+                        "lng": 77.1181
+                    },
+                    "depth": "underground",
+                    "is_interchange": false,
+                    "order": 3
+                },
+                {
+                    "id": "igi_airport",
+                    "name": "IGI Airport",
+                    "code": "IGAI",
+                    "position": {
+                        "lat": 28.557,
+                        "lng": 77.0868
+                    },
+                    "depth": "underground",
+                    "is_interchange": false,
+                    "order": 4
+                },
+                {
+                    "id": "dwarka_sector_21",
+                    "name": "Dwarka Sector 21",
+                    "code": "DS21",
+                    "position": {
+                        "lat": 28.5521891,
+                        "lng": 77.0597849
+                    },
+                    "depth": "underground",
+                    "is_interchange": true,
+                    "order": 5,
+                    "interchange_lines": [
+                        "airport_express",
+                        "blue_line"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "aqua_line",
+            "name": "Aqua Line",
+            "color": "#00D4FF",
+            "stations": [
+                {
+                    "id": "noida_sector_51",
+                    "name": "Noida Sector 51",
+                    "code": "NS51",
+                    "position": {
+                        "lat": 28.58559,
+                        "lng": 77.3724263
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 0
+                },
+                {
+                    "id": "noida_sector_50",
+                    "name": "Noida Sector 50",
+                    "code": "NS50",
+                    "position": {
+                        "lat": 28.5744745,
+                        "lng": 77.3757203
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 1
+                },
+                {
+                    "id": "noida_sector_76",
+                    "name": "Noida Sector 76",
+                    "code": "NS76",
+                    "position": {
+                        "lat": 28.565448,
+                        "lng": 77.3771931
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 2
+                },
+                {
+                    "id": "noida_sector_101",
+                    "name": "Noida Sector 101",
+                    "code": "NS101",
+                    "position": {
+                        "lat": 28.5549127,
+                        "lng": 77.3833085
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 3
+                },
+                {
+                    "id": "noida_sector_81",
+                    "name": "Noida Sector 81",
+                    "code": "NS81",
+                    "position": {
+                        "lat": 28.5482782,
+                        "lng": 77.3892416
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 4
+                },
+                {
+                    "id": "nsez_noida",
+                    "name": "NSEZ Noida",
+                    "code": "NSNO",
+                    "position": {
+                        "lat": 28.532484,
+                        "lng": 77.3923881
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 5
+                },
+                {
+                    "id": "noida_sector_83",
+                    "name": "Noida Sector 83",
+                    "code": "NS83",
+                    "position": {
+                        "lat": 28.5235094,
+                        "lng": 77.3961627
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 6
+                },
+                {
+                    "id": "noida_sector_137",
+                    "name": "Noida Sector 137",
+                    "code": "NS137",
+                    "position": {
+                        "lat": 28.5116878,
+                        "lng": 77.4026215
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 7
+                },
+                {
+                    "id": "noida_sector_142",
+                    "name": "Noida Sector 142",
+                    "code": "NS142",
+                    "position": {
+                        "lat": 28.5006758,
+                        "lng": 77.410357
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 8
+                },
+                {
+                    "id": "noida_sector_143",
+                    "name": "Noida Sector 143",
+                    "code": "NS143",
+                    "position": {
+                        "lat": 28.4938492,
+                        "lng": 77.4199486
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 9
+                },
+                {
+                    "id": "noida_sector_144",
+                    "name": "Noida Sector 144",
+                    "code": "NS144",
+                    "position": {
+                        "lat": 28.4858435,
+                        "lng": 77.4319649
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 10
+                },
+                {
+                    "id": "noida_sector_145",
+                    "name": "Noida Sector 145",
+                    "code": "NS145",
+                    "position": {
+                        "lat": 28.4790632,
+                        "lng": 77.4413419
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 11
+                },
+                {
+                    "id": "noida_sector_146",
+                    "name": "Noida Sector 146",
+                    "code": "NS146",
+                    "position": {
+                        "lat": 28.4701886,
+                        "lng": 77.4513197
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 12
+                },
+                {
+                    "id": "noida_sector_147",
+                    "name": "Noida Sector 147",
+                    "code": "NS147",
+                    "position": {
+                        "lat": 28.4568831,
+                        "lng": 77.4718131
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 13
+                },
+                {
+                    "id": "noida_sector_148",
+                    "name": "Noida Sector 148",
+                    "code": "NS148",
+                    "position": {
+                        "lat": 28.4506202,
+                        "lng": 77.4840344
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 14
+                },
+                {
+                    "id": "knowledge_park_ii",
+                    "name": "Knowledge Park II",
+                    "code": "KPI",
+                    "position": {
+                        "lat": 28.4556068,
+                        "lng": 77.4950066
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 15
+                },
+                {
+                    "id": "pari_chowk",
+                    "name": "Pari Chowk",
+                    "code": "PACH",
+                    "position": {
+                        "lat": 28.4648671,
+                        "lng": 77.5072279
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 16
+                },
+                {
+                    "id": "alpha_1_greater_noida",
+                    "name": "Alpha 1 Greater Noida",
+                    "code": "A1GN",
+                    "position": {
+                        "lat": 28.4709809,
+                        "lng": 77.510806
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 17
+                },
+                {
+                    "id": "delta_1_greater_noida",
+                    "name": "Delta 1 Greater Noida",
+                    "code": "D1GN",
+                    "position": {
+                        "lat": 28.4775394,
+                        "lng": 77.5160056
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 18
+                },
+                {
+                    "id": "gnida_office",
+                    "name": "GNIDA Office",
+                    "code": "GNOF",
+                    "position": {
+                        "lat": 28.4886672,
+                        "lng": 77.5332572
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 19
+                },
+                {
+                    "id": "depot_greater_noida",
+                    "name": "Depot Greater Noida",
+                    "code": "DGN",
+                    "position": {
+                        "lat": 28.4909222,
+                        "lng": 77.5368696
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 20
+                }
+            ]
+        },
+        {
+            "id": "blue_line",
+            "name": "Blue Line",
+            "color": "#0066CC",
+            "stations": [
+                {
+                    "id": "dwarka_sector_21",
+                    "name": "Dwarka Sector 21",
+                    "code": "DS21",
+                    "position": {
+                        "lat": 28.5521891,
+                        "lng": 77.0597849
+                    },
+                    "depth": "elevated",
+                    "is_interchange": true,
+                    "subroute": "dwarka-to-noida",
+                    "order": 0,
+                    "interchange_lines": [
+                        "airport_express",
+                        "blue_line"
+                    ]
+                },
+                {
+                    "id": "dwarka_sector_8",
+                    "name": "Dwarka Sector 8",
+                    "code": "DS8",
+                    "position": {
+                        "lat": 28.5656778,
+                        "lng": 77.062234
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "subroute": "dwarka-to-noida",
+                    "order": 1
+                },
+                {
+                    "id": "dwarka_sector_9",
+                    "name": "Dwarka Sector 9",
+                    "code": "DS9",
+                    "position": {
+                        "lat": 28.573495,
+                        "lng": 77.0630401
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "subroute": "dwarka-to-noida",
+                    "order": 2
+                },
+                {
+                    "id": "dwarka_sector_10",
+                    "name": "Dwarka Sector 10",
+                    "code": "DS10",
+                    "position": {
+                        "lat": 28.5811668,
+                        "lng": 77.0548073
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "subroute": "dwarka-to-noida",
+                    "order": 3
+                },
+                {
+                    "id": "dwarka_sector_11",
+                    "name": "Dwarka Sector 11",
+                    "code": "DS11",
+                    "position": {
+                        "lat": 28.5864967,
+                        "lng": 77.046899
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "subroute": "dwarka-to-noida",
+                    "order": 4
+                },
+                {
+                    "id": "dwarka_sector_12",
+                    "name": "Dwarka Sector 12",
+                    "code": "DS12",
+                    "position": {
+                        "lat": 28.59231,
+                        "lng": 77.0380551
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "subroute": "dwarka-to-noida",
+                    "order": 5
+                },
+                {
+                    "id": "dwarka_sector_13",
+                    "name": "Dwarka Sector 13",
+                    "code": "DS13",
+                    "position": {
+                        "lat": 28.5968915,
+                        "lng": 77.0308599
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "subroute": "dwarka-to-noida",
+                    "order": 6
+                },
+                {
+                    "id": "dwarka_sector_14",
+                    "name": "Dwarka Sector 14",
+                    "code": "DS14",
+                    "position": {
+                        "lat": 28.602192,
+                        "lng": 77.0235118
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "subroute": "dwarka-to-noida",
+                    "order": 7
+                },
+                {
+                    "id": "dwarka",
+                    "name": "Dwarka",
+                    "code": "DWAR",
+                    "position": {
+                        "lat": 28.6084203,
+                        "lng": 77.0300401
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "subroute": "dwarka-to-noida",
+                    "order": 8
+                },
+                {
+                    "id": "dwarka_mor",
+                    "name": "Dwarka Mor",
+                    "code": "DWMO",
+                    "position": {
+                        "lat": 28.6111983,
+                        "lng": 77.0352282
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "subroute": "dwarka-to-noida",
+                    "order": 9
+                },
+                {
+                    "id": "nawada",
+                    "name": "Nawada",
+                    "code": "NAWA",
+                    "position": {
+                        "lat": 28.6111983,
+                        "lng": 77.0352282
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "subroute": "dwarka-to-noida",
+                    "order": 10
+                },
+                {
+                    "id": "uttam_nagar_west",
+                    "name": "Uttam Nagar West",
+                    "code": "UNW",
+                    "position": {
+                        "lat": 28.6169801,
+                        "lng": 77.0492102
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "subroute": "dwarka-to-noida",
+                    "order": 11
+                },
+                {
+                    "id": "uttam_nagar_east",
+                    "name": "Uttam Nagar East",
+                    "code": "UNE",
+                    "position": {
+                        "lat": 28.6220379,
+                        "lng": 77.0647334
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "subroute": "dwarka-to-noida",
+                    "order": 12
+                },
+                {
+                    "id": "janak_puri_west",
+                    "name": "Janak Puri West",
+                    "code": "JPW",
+                    "position": {
+                        "lat": 28.625223,
+                        "lng": 77.074464
+                    },
+                    "depth": "elevated",
+                    "is_interchange": true,
+                    "subroute": "dwarka-to-noida",
+                    "order": 13,
+                    "interchange_lines": [
+                        "blue_line",
+                        "magenta_line"
+                    ]
+                },
+                {
+                    "id": "janak_puri_east",
+                    "name": "Janak Puri East",
+                    "code": "JPE",
+                    "position": {
+                        "lat": 28.6300153,
+                        "lng": 77.0856937
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "subroute": "dwarka-to-noida",
+                    "order": 14
+                },
+                {
+                    "id": "tilak_nagar",
+                    "name": "Tilak Nagar",
+                    "code": "TINA",
+                    "position": {
+                        "lat": 28.6330376,
+                        "lng": 77.0942866
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "subroute": "dwarka-to-noida",
+                    "order": 15
+                },
+                {
+                    "id": "subhash_nagar",
+                    "name": "Subhash Nagar",
+                    "code": "SUNA",
+                    "position": {
+                        "lat": 28.6380745,
+                        "lng": 77.1055473
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "subroute": "dwarka-to-noida",
+                    "order": 16
+                },
+                {
+                    "id": "tagore_garden",
+                    "name": "Tagore Garden",
+                    "code": "TAGA",
+                    "position": {
+                        "lat": 28.6411238,
+                        "lng": 77.1119687
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "subroute": "dwarka-to-noida",
+                    "order": 17
+                },
+                {
+                    "id": "rajouri_garden",
+                    "name": "Rajouri Garden",
+                    "code": "RAGA",
+                    "position": {
+                        "lat": 28.6454319,
+                        "lng": 77.1198674
+                    },
+                    "depth": "elevated",
+                    "is_interchange": true,
+                    "subroute": "dwarka-to-noida",
+                    "order": 18,
+                    "interchange_lines": [
+                        "blue_line",
+                        "pink_line"
+                    ]
+                },
+                {
+                    "id": "ramesh_nagar",
+                    "name": "Ramesh Nagar",
+                    "code": "RANA",
+                    "position": {
+                        "lat": 28.649763,
+                        "lng": 77.1279108
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "subroute": "dwarka-to-noida",
+                    "order": 19
+                },
+                {
+                    "id": "moti_nagar",
+                    "name": "Moti Nagar",
+                    "code": "MONA",
+                    "position": {
+                        "lat": 28.6536331,
+                        "lng": 77.1367942
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "subroute": "dwarka-to-noida",
+                    "order": 20
+                },
+                {
+                    "id": "kirti_nagar",
+                    "name": "Kirti Nagar",
+                    "code": "KINA",
+                    "position": {
+                        "lat": 28.6526933,
+                        "lng": 77.1502138
+                    },
+                    "depth": "elevated",
+                    "is_interchange": true,
+                    "subroute": "dwarka-to-noida",
+                    "order": 21,
+                    "interchange_lines": [
+                        "blue_line",
+                        "green_line"
+                    ]
+                },
+                {
+                    "id": "shadipur",
+                    "name": "Shadipur",
+                    "code": "SHAD",
+                    "position": {
+                        "lat": 28.6487125,
+                        "lng": 77.1583622
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "subroute": "dwarka-to-noida",
+                    "order": 22
+                },
+                {
+                    "id": "patel_nagar",
+                    "name": "Patel Nagar",
+                    "code": "PANA",
+                    "position": {
+                        "lat": 28.6450264,
+                        "lng": 77.1647885
+                    },
+                    "depth": "underground",
+                    "is_interchange": false,
+                    "subroute": "dwarka-to-noida",
+                    "order": 23
+                },
+                {
+                    "id": "rajendra_place",
+                    "name": "Rajendra Place",
+                    "code": "RAPL",
+                    "position": {
+                        "lat": 28.642741,
+                        "lng": 77.176087
+                    },
+                    "depth": "underground",
+                    "is_interchange": false,
+                    "subroute": "dwarka-to-noida",
+                    "order": 24
+                },
+                {
+                    "id": "karol_bagh",
+                    "name": "Karol Bagh",
+                    "code": "KABA",
+                    "position": {
+                        "lat": 28.6438386,
+                        "lng": 77.1850384
+                    },
+                    "depth": "underground",
+                    "is_interchange": false,
+                    "subroute": "dwarka-to-noida",
+                    "order": 25
+                },
+                {
+                    "id": "jhandewalan",
+                    "name": "Jhandewalan",
+                    "code": "JHAN",
+                    "position": {
+                        "lat": 28.6434586,
+                        "lng": 77.1913944
+                    },
+                    "depth": "underground",
+                    "is_interchange": false,
+                    "subroute": "dwarka-to-noida",
+                    "order": 26
+                },
+                {
+                    "id": "rk_ashram_marg",
+                    "name": "RK Ashram Marg",
+                    "code": "RAM",
+                    "position": {
+                        "lat": 28.6389378,
+                        "lng": 77.1984087
+                    },
+                    "depth": "underground",
+                    "is_interchange": false,
+                    "subroute": "dwarka-to-noida",
+                    "order": 27
+                },
+                {
+                    "id": "rajiv_chowk",
+                    "name": "Rajiv Chowk",
+                    "code": "RACH",
+                    "position": {
+                        "lat": 28.634318,
+                        "lng": 77.2150304
+                    },
+                    "depth": "underground",
+                    "is_interchange": true,
+                    "subroute": "dwarka-to-noida",
+                    "order": 28,
+                    "interchange_lines": [
+                        "blue_line",
+                        "yellow_line"
+                    ]
+                },
+                {
+                    "id": "barakhamba_road",
+                    "name": "Barakhamba Road",
+                    "code": "BARO",
+                    "position": {
+                        "lat": 28.6296658,
+                        "lng": 77.2226756
+                    },
+                    "depth": "underground",
+                    "is_interchange": false,
+                    "subroute": "dwarka-to-noida",
+                    "order": 29
+                },
+                {
+                    "id": "mandi_house",
+                    "name": "Mandi House",
+                    "code": "MAHO",
+                    "position": {
+                        "lat": 28.625698,
+                        "lng": 77.2354326
+                    },
+                    "depth": "underground",
+                    "is_interchange": true,
+                    "subroute": "dwarka-to-noida",
+                    "order": 30,
+                    "interchange_lines": [
+                        "blue_line",
+                        "violet_line"
+                    ]
+                },
+                {
+                    "id": "supreme_court",
+                    "name": "Supreme Court",
+                    "code": "SUPC",
+                    "position": {
+                        "lat": 28.6232306,
+                        "lng": 77.2406608
+                    },
+                    "depth": "underground",
+                    "is_interchange": false,
+                    "subroute": "dwarka-to-noida",
+                    "order": 31
+                },
+                {
+                    "id": "indraprastha",
+                    "name": "Indraprastha",
+                    "code": "INDR",
+                    "position": {
+                        "lat": 28.621287,
+                        "lng": 77.2479318
+                    },
+                    "depth": "underground",
+                    "is_interchange": false,
+                    "subroute": "dwarka-to-noida",
+                    "order": 32
+                },
+                {
+                    "id": "yamuna_bank",
+                    "name": "Yamuna Bank",
+                    "code": "YABA",
+                    "position": {
+                        "lat": 28.6227541,
+                        "lng": 77.2654514
+                    },
+                    "depth": "elevated",
+                    "is_interchange": true,
+                    "subroute": "dwarka-to-noida",
+                    "order": 33,
+                    "interchange_lines": [
+                        "dwarka-to-noida",
+                        "yamuna_to_vaishali"
+                    ]
+                },
+                {
+                    "id": "akshardham",
+                    "name": "Akshardham",
+                    "code": "AKSH",
+                    "position": {
+                        "lat": 28.6173669,
+                        "lng": 77.2725918
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "subroute": "dwarka-to-noida",
+                    "order": 34
+                },
+                {
+                    "id": "mayur_vihar_phase1",
+                    "name": "Mayur Vihar Phase-1",
+                    "code": "MVPH1",
+                    "position": {
+                        "lat": 28.6042071,
+                        "lng": 77.289964
+                    },
+                    "depth": "elevated",
+                    "is_interchange": true,
+                    "subroute": "dwarka-to-noida",
+                    "order": 35,
+                    "interchange_lines": [
+                        "blue_line",
+                        "pink_line"
+                    ]
+                },
+                {
+                    "id": "mayur_vihar_extension",
+                    "name": "Mayur Vihar Extension",
+                    "code": "MVE",
+                    "position": {
+                        "lat": 28.5955767,
+                        "lng": 77.2940837
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "subroute": "dwarka-to-noida",
+                    "order": 36
+                },
+                {
+                    "id": "new_ashok_nagar",
+                    "name": "New Ashok Nagar",
+                    "code": "NASN",
+                    "position": {
+                        "lat": 28.5879068,
+                        "lng": 77.3000985
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "subroute": "dwarka-to-noida",
+                    "order": 37
+                },
+                {
+                    "id": "noida_sector_15",
+                    "name": "Noida Sector 15",
+                    "code": "NS19",
+                    "position": {
+                        "lat": 28.5856776,
+                        "lng": 77.3078394
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "subroute": "dwarka-to-noida",
+                    "order": 38
+                },
+                {
+                    "id": "noida_sector_16",
+                    "name": "Noida Sector 16",
+                    "code": "NS16",
+                    "position": {
+                        "lat": 28.5769029,
+                        "lng": 77.3181381
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "subroute": "dwarka-to-noida",
+                    "order": 39
+                },
+                {
+                    "id": "noida_sector_18",
+                    "name": "Noida Sector 18",
+                    "code": "NS111",
+                    "position": {
+                        "lat": 28.5710752,
+                        "lng": 77.3264363
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "subroute": "dwarka-to-noida",
+                    "order": 40
+                },
+                {
+                    "id": "botanical_garden",
+                    "name": "Botanical Garden",
+                    "code": "BOGA",
+                    "position": {
+                        "lat": 28.5655616,
+                        "lng": 77.3332366
+                    },
+                    "depth": "elevated",
+                    "is_interchange": true,
+                    "subroute": "dwarka-to-noida",
+                    "order": 41,
+                    "interchange_lines": [
+                        "blue_line",
+                        "magenta_line"
+                    ]
+                },
+                {
+                    "id": "golf_course",
+                    "name": "Golf Course",
+                    "code": "GOCO",
+                    "position": {
+                        "lat": 28.5673909,
+                        "lng": 77.3324984
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "subroute": "dwarka-to-noida",
+                    "order": 42
+                },
+                {
+                    "id": "noida_city_centre",
+                    "name": "Noida City Centre",
+                    "code": "NCC",
+                    "position": {
+                        "lat": 28.5724328,
+                        "lng": 77.3496571
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "subroute": "dwarka-to-noida",
+                    "order": 43
+                },
+                {
+                    "id": "noida_sector_34",
+                    "name": "Noida Sector 34",
+                    "code": "NS3",
+                    "position": {
+                        "lat": 28.5800034,
+                        "lng": 77.3612137
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "subroute": "dwarka-to-noida",
+                    "order": 44
+                },
+                {
+                    "id": "noida_sector_52",
+                    "name": "Noida Sector 52",
+                    "code": "NS52",
+                    "position": {
+                        "lat": 28.5871414,
+                        "lng": 77.3705302
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "subroute": "dwarka-to-noida",
+                    "order": 45
+                },
+                {
+                    "id": "noida_sector_61",
+                    "name": "Noida Sector 61",
+                    "code": "NS6",
+                    "position": {
+                        "lat": 28.5941,
+                        "lng": 77.3745522
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "subroute": "dwarka-to-noida",
+                    "order": 46
+                },
+                {
+                    "id": "noida_sector_59",
+                    "name": "Noida Sector 59",
+                    "code": "NS53",
+                    "position": {
+                        "lat": 28.6067943,
+                        "lng": 77.3748406
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "subroute": "dwarka-to-noida",
+                    "order": 47
+                },
+                {
+                    "id": "noida_sector_62",
+                    "name": "Noida Sector 62",
+                    "code": "NS61",
+                    "position": {
+                        "lat": 28.6169545,
+                        "lng": 77.3745691
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "subroute": "dwarka-to-noida",
+                    "order": 48
+                },
+                {
+                    "id": "noida_electronic_city",
+                    "name": "Noida Electronic City",
+                    "code": "NEC",
+                    "position": {
+                        "lat": 28.6252243,
+                        "lng": 77.3774706
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "subroute": "dwarka-to-noida",
+                    "order": 49
+                },
+                {
+                    "id": "yamuna_bank_2",
+                    "name": "Yamuna Bank",
+                    "code": "YABA",
+                    "position": {
+                        "lat": 28.6227541,
+                        "lng": 77.2654514
+                    },
+                    "depth": "elevated",
+                    "is_interchange": true,
+                    "subroute": "yamuna-to-vaishali",
+                    "order": 33,
+                    "interchange_lines": [
+                        "dwarka-to-noida",
+                        "yamuna_to_vaishali"
+                    ]
+                },
+                {
+                    "id": "laxmi_nagar",
+                    "name": "Laxmi Nagar",
+                    "code": "LANA",
+                    "position": {
+                        "lat": 28.6315173,
+                        "lng": 77.2755965
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "subroute": "yamuna-to-vaishali",
+                    "order": 34
+                },
+                {
+                    "id": "nirman_vihar",
+                    "name": "Nirman Vihar",
+                    "code": "NIVI",
+                    "position": {
+                        "lat": 28.6330357,
+                        "lng": 77.2839895
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "subroute": "yamuna-to-vaishali",
+                    "order": 35
+                },
+                {
+                    "id": "preet_vihar",
+                    "name": "Preet Vihar",
+                    "code": "PRVI",
+                    "position": {
+                        "lat": 28.6379968,
+                        "lng": 77.2928792
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "subroute": "yamuna-to-vaishali",
+                    "order": 36
+                },
+                {
+                    "id": "karkarduma",
+                    "name": "Karkarduma",
+                    "code": "KARK",
+                    "position": {
+                        "lat": 28.6443237,
+                        "lng": 77.3015087
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "subroute": "yamuna-to-vaishali",
+                    "order": 37
+                },
+                {
+                    "id": "anand_vihar_isbt",
+                    "name": "Anand Vihar ISBT",
+                    "code": "AVI",
+                    "position": {
+                        "lat": 28.6462194,
+                        "lng": 77.316805
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "subroute": "yamuna-to-vaishali",
+                    "order": 38
+                },
+                {
+                    "id": "kaushambi",
+                    "name": "Kaushambi",
+                    "code": "KAUS",
+                    "position": {
+                        "lat": 28.6461743,
+                        "lng": 77.3253351
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "subroute": "yamuna-to-vaishali",
+                    "order": 57
+                },
+                {
+                    "id": "vaishali",
+                    "name": "Vaishali",
+                    "code": "VAIS",
+                    "position": {
+                        "lat": 28.6436022,
+                        "lng": 77.3347263
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "subroute": "yamuna-to-vaishali",
+                    "order": 58
+                }
+            ]
+        },
+        {
+            "id": "green_line",
+            "name": "Green Line",
+            "color": "#00B04F",
+            "stations": [
+                {
+                    "id": "inderlok",
+                    "name": "Inderlok",
+                    "code": "INDE",
+                    "position": {
+                        "lat": 28.673562,
+                        "lng": 77.173562
+                    },
+                    "depth": "underground",
+                    "is_interchange": true,
+                    "subroute": "inderlok-to-mundka",
+                    "order": 0,
+                    "interchange_lines": [
+                        "green_line",
+                        "red_line"
+                    ]
+                },
+                {
+                    "id": "ashok_park_main",
+                    "name": "Ashok Park Main",
+                    "code": "APM",
+                    "position": {
+                        "lat": 28.6715289,
+                        "lng": 77.1529263
+                    },
+                    "depth": "elevated",
+                    "is_route_change": true,
+                    "subroute": "inderlok-to-mundka",
+                    "order": 1,
+                    "interchange_routes": [
+                        "inderlok-to-mundka",
+                        "kirti-to-ashok"
+                    ]
+                },
+                {
+                    "id": "punjabi_bagh",
+                    "name": "Punjabi Bagh",
+                    "code": "PUBA",
+                    "position": {
+                        "lat": 28.6713545,
+                        "lng": 77.141569
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "subroute": "inderlok-to-mundka",
+                    "order": 2
+                },
+                {
+                    "id": "shivaji_park",
+                    "name": "Shivaji Park",
+                    "code": "SHPA",
+                    "position": {
+                        "lat": 28.6744369,
+                        "lng": 77.1259126
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "subroute": "inderlok-to-mundka",
+                    "order": 3
+                },
+                {
+                    "id": "madipur",
+                    "name": "Madipur",
+                    "code": "MADI",
+                    "position": {
+                        "lat": 28.6762787,
+                        "lng": 77.1139735
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "subroute": "inderlok-to-mundka",
+                    "order": 4
+                },
+                {
+                    "id": "paschim_vihar_east",
+                    "name": "Paschim Vihar (East)",
+                    "code": "PAVE",
+                    "position": {
+                        "lat": 28.6761763,
+                        "lng": 77.1098772
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "subroute": "inderlok-to-mundka",
+                    "order": 5
+                },
+                {
+                    "id": "paschim_vihar_west",
+                    "name": "Paschim Vihar (West)",
+                    "code": "PAVW",
+                    "position": {
+                        "lat": 28.6777622,
+                        "lng": 77.096524
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "subroute": "inderlok-to-mundka",
+                    "order": 6
+                },
+                {
+                    "id": "peera_garhi",
+                    "name": "Peera Garhi",
+                    "code": "PEGA",
+                    "position": {
+                        "lat": 28.6789133,
+                        "lng": 77.0875005
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "subroute": "inderlok-to-mundka",
+                    "order": 7
+                },
+                {
+                    "id": "udyog_nagar",
+                    "name": "Udyog Nagar",
+                    "code": "UDNA",
+                    "position": {
+                        "lat": 28.6805119,
+                        "lng": 77.07906
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "subroute": "inderlok-to-mundka",
+                    "order": 8
+                },
+                {
+                    "id": "maharaja_surajmal_stadium",
+                    "name": "Maharaja Surajmal Stadium",
+                    "code": "MSS",
+                    "position": {
+                        "lat": 28.6806654,
+                        "lng": 77.0684475
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "subroute": "inderlok-to-mundka",
+                    "order": 9
+                },
+                {
+                    "id": "nangloi",
+                    "name": "Nangloi",
+                    "code": "NANG",
+                    "position": {
+                        "lat": 28.681663,
+                        "lng": 77.061042
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "subroute": "inderlok-to-mundka",
+                    "order": 10
+                },
+                {
+                    "id": "nangloi_railway_station",
+                    "name": "Nangloi Railway Station",
+                    "code": "NRS",
+                    "position": {
+                        "lat": 28.6813688,
+                        "lng": 77.0527036
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "subroute": "inderlok-to-mundka",
+                    "order": 11
+                },
+                {
+                    "id": "rajdhani_park",
+                    "name": "Rajdhani Park",
+                    "code": "RAPA",
+                    "position": {
+                        "lat": 28.6811386,
+                        "lng": 77.0399481
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "subroute": "inderlok-to-mundka",
+                    "order": 12
+                },
+                {
+                    "id": "mundka",
+                    "name": "Mundka",
+                    "code": "MUND",
+                    "position": {
+                        "lat": 28.6817013,
+                        "lng": 77.0292336
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "subroute": "inderlok-to-mundka",
+                    "order": 13
+                },
+                {
+                    "id": "mundka_industrial_area_mia",
+                    "name": "Mundka Industrial Area (MIA)",
+                    "code": "MIA",
+                    "position": {
+                        "lat": 28.6832871,
+                        "lng": 77.0122506
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "subroute": "inderlok-to-mundka",
+                    "order": 14
+                },
+                {
+                    "id": "ghevra_metro_station",
+                    "name": "Ghevra Metro station",
+                    "code": "GMS",
+                    "position": {
+                        "lat": 28.6839502,
+                        "lng": 76.9744216
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "subroute": "inderlok-to-mundka",
+                    "order": 15
+                },
+                {
+                    "id": "tikri_kalan",
+                    "name": "Tikri Kalan",
+                    "code": "TIKA",
+                    "position": {
+                        "lat": 28.6839502,
+                        "lng": 76.9744216
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "subroute": "inderlok-to-mundka",
+                    "order": 16
+                },
+                {
+                    "id": "tikri_border",
+                    "name": "Tikri Border",
+                    "code": "TIBO",
+                    "position": {
+                        "lat": 28.6884728,
+                        "lng": 76.9524623
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "subroute": "inderlok-to-mundka",
+                    "order": 17
+                },
+                {
+                    "id": "pandit_shree_ram_sharma",
+                    "name": "Pandit Shree Ram Sharma",
+                    "code": "PSRS",
+                    "position": {
+                        "lat": 28.6908894,
+                        "lng": 76.9318016
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "subroute": "inderlok-to-mundka",
+                    "order": 18
+                },
+                {
+                    "id": "bahdurgarh_city",
+                    "name": "Bahdurgarh City",
+                    "code": "BACI",
+                    "position": {
+                        "lat": 28.6918214,
+                        "lng": 76.9270398
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "subroute": "inderlok-to-mundka",
+                    "order": 19
+                },
+                {
+                    "id": "brigadier_hoshiar_singh",
+                    "name": "Brigadier Hoshiar Singh",
+                    "code": "BHS",
+                    "position": {
+                        "lat": 28.6966066,
+                        "lng": 76.9159137
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "subroute": "inderlok-to-mundka",
+                    "order": 20
+                },
+                {
+                    "id": "ashok_park_main_2",
+                    "name": "Ashok Park Main",
+                    "code": "APM",
+                    "position": {
+                        "lat": 28.6715289,
+                        "lng": 77.1529263
+                    },
+                    "depth": "elevated",
+                    "is_interchange": true,
+                    "subroute": "kirti-to-ashok",
+                    "order": 21,
+                    "interchange_lines": [
+                        "inderlok-to-mundka",
+                        "kirti-to-ashok"
+                    ]
+                },
+                {
+                    "id": "satguru_ram_singh_marg",
+                    "name": "Satguru Ram Singh Marg",
+                    "code": "SRSM",
+                    "position": {
+                        "lat": 28.6621299,
+                        "lng": 77.1527891
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "subroute": "kirti-to-ashok",
+                    "order": 22
+                },
+                {
+                    "id": "kirti_nagar",
+                    "name": "Kirti Nagar",
+                    "code": "KINA",
+                    "position": {
+                        "lat": 28.6526933,
+                        "lng": 77.1502138
+                    },
+                    "depth": "elevated",
+                    "is_interchange": true,
+                    "subroute": "kirti-to-ashok",
+                    "order": 23,
+                    "interchange_lines": [
+                        "blue_line",
+                        "green_line"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "magenta_line",
+            "name": "Magenta Line",
+            "color": "#E6007E",
+            "stations": [
+                {
+                    "id": "janak_puri_west",
+                    "name": "Janak Puri West",
+                    "code": "JPW",
+                    "position": {
+                        "lat": 28.625223,
+                        "lng": 77.074464
+                    },
+                    "depth": "elevated",
+                    "is_interchange": true,
+                    "order": 0,
+                    "interchange_lines": [
+                        "blue_line",
+                        "magenta_line"
+                    ]
+                },
+                {
+                    "id": "dabri_mor_janakpuri_south",
+                    "name": "Dabri Mor - Janakpuri South",
+                    "code": "DMJS",
+                    "position": {
+                        "lat": 28.6172028,
+                        "lng": 77.0804558
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 1
+                },
+                {
+                    "id": "dashrath_puri",
+                    "name": "Dashrath Puri",
+                    "code": "DAPU",
+                    "position": {
+                        "lat": 28.6042487,
+                        "lng": 77.0854307
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 2
+                },
+                {
+                    "id": "palam",
+                    "name": "Palam",
+                    "code": "PALA",
+                    "position": {
+                        "lat": 28.5903601,
+                        "lng": 77.083407
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 3
+                },
+                {
+                    "id": "sadar_bazar_cantonment",
+                    "name": "Sadar Bazar Cantonment",
+                    "code": "SBC",
+                    "position": {
+                        "lat": 28.5795056,
+                        "lng": 77.1064431
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 4
+                },
+                {
+                    "id": "terminal_1igi_airport",
+                    "name": "Terminal 1-IGI Airport",
+                    "code": "T1IA",
+                    "position": {
+                        "lat": 28.5652094,
+                        "lng": 77.1243806
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 5
+                },
+                {
+                    "id": "shankar_vihar",
+                    "name": "Shankar Vihar",
+                    "code": "SHAVI",
+                    "position": {
+                        "lat": 28.5616378,
+                        "lng": 77.1370397
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 6
+                },
+                {
+                    "id": "vasant_vihar",
+                    "name": "Vasant Vihar",
+                    "code": "VAVI",
+                    "position": {
+                        "lat": 28.5576666,
+                        "lng": 77.1597465
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 7
+                },
+                {
+                    "id": "munirka",
+                    "name": "Munirka",
+                    "code": "MUNI",
+                    "position": {
+                        "lat": 28.5577853,
+                        "lng": 77.1672312
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 8
+                },
+                {
+                    "id": "rk_puram",
+                    "name": "RK Puram",
+                    "code": "RKPU",
+                    "position": {
+                        "lat": 28.5506834,
+                        "lng": 77.1832075
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 9
+                },
+                {
+                    "id": "iit_delhi",
+                    "name": "IIT Delhi",
+                    "code": "IITD",
+                    "position": {
+                        "lat": 28.5480549,
+                        "lng": 77.1931166
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 10
+                },
+                {
+                    "id": "hauz_khas",
+                    "name": "Hauz Khas",
+                    "code": "HAKH",
+                    "position": {
+                        "lat": 28.54255,
+                        "lng": 77.2055767
+                    },
+                    "depth": "underground",
+                    "is_interchange": true,
+                    "order": 11,
+                    "interchange_lines": [
+                        "magenta_line",
+                        "yellow_line"
+                    ]
+                },
+                {
+                    "id": "panchsheel_park",
+                    "name": "Panchsheel Park",
+                    "code": "PANP",
+                    "position": {
+                        "lat": 28.5407212,
+                        "lng": 77.2158246
+                    },
+                    "depth": "underground",
+                    "is_interchange": false,
+                    "order": 12
+                },
+                {
+                    "id": "chirag_delhi",
+                    "name": "Chirag Delhi",
+                    "code": "CHDE",
+                    "position": {
+                        "lat": 28.5404518,
+                        "lng": 77.2262985
+                    },
+                    "depth": "underground",
+                    "is_interchange": false,
+                    "order": 13
+                },
+                {
+                    "id": "greater_kailash",
+                    "name": "Greater Kailash",
+                    "code": "GRKA",
+                    "position": {
+                        "lat": 28.5415009,
+                        "lng": 77.2342063
+                    },
+                    "depth": "underground",
+                    "is_interchange": false,
+                    "order": 14
+                },
+                {
+                    "id": "nehru_enclave",
+                    "name": "Nehru Enclave",
+                    "code": "NEEN",
+                    "position": {
+                        "lat": 28.5441095,
+                        "lng": 77.2461487
+                    },
+                    "depth": "underground",
+                    "is_interchange": false,
+                    "order": 15
+                },
+                {
+                    "id": "kalkaji_mandir",
+                    "name": "Kalkaji Mandir",
+                    "code": "KAMA",
+                    "position": {
+                        "lat": 28.5482916,
+                        "lng": 77.254105
+                    },
+                    "depth": "underground",
+                    "is_interchange": true,
+                    "order": 16,
+                    "interchange_lines": [
+                        "magenta_line",
+                        "violet_line"
+                    ]
+                },
+                {
+                    "id": "okhla_nsic",
+                    "name": "Okhla NSIC",
+                    "code": "OKNS",
+                    "position": {
+                        "lat": 28.5534941,
+                        "lng": 77.2599794
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 17
+                },
+                {
+                    "id": "sukhdev_vihar",
+                    "name": "Sukhdev Vihar",
+                    "code": "SUVI",
+                    "position": {
+                        "lat": 28.5569387,
+                        "lng": 77.2666768
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 18
+                },
+                {
+                    "id": "jamia_millia_islamia",
+                    "name": "JAMIA MILLIA ISLAMIA",
+                    "code": "JMI",
+                    "position": {
+                        "lat": 28.560851,
+                        "lng": 77.2811046
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 19
+                },
+                {
+                    "id": "okhla_vihar",
+                    "name": "Okhla Vihar",
+                    "code": "OKVI",
+                    "position": {
+                        "lat": 28.5608226,
+                        "lng": 77.2882539
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 20
+                },
+                {
+                    "id": "jasola_vihar_shaheen_bagh",
+                    "name": "Jasola Vihar Shaheen Bagh",
+                    "code": "JVSB",
+                    "position": {
+                        "lat": 28.5475544,
+                        "lng": 77.2955646
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 21
+                },
+                {
+                    "id": "kalindi_kunj",
+                    "name": "Kalindi Kunj",
+                    "code": "KAKU",
+                    "position": {
+                        "lat": 28.5418554,
+                        "lng": 77.3040534
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 22
+                },
+                {
+                    "id": "okhla_bird_sanctuary",
+                    "name": "Okhla Bird Sanctuary",
+                    "code": "OBS",
+                    "position": {
+                        "lat": 28.5511835,
+                        "lng": 77.318933
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 23
+                },
+                {
+                    "id": "botanical_garden",
+                    "name": "Botanical Garden",
+                    "code": "BOGA",
+                    "position": {
+                        "lat": 28.5655616,
+                        "lng": 77.3332366
+                    },
+                    "depth": "elevated",
+                    "is_interchange": true,
+                    "order": 24,
+                    "interchange_lines": [
+                        "blue_line",
+                        "magenta_line"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "pink_line",
+            "name": "Pink Line",
+            "color": "#FF69B4",
+            "stations": [
+                {
+                    "id": "majlis_park",
+                    "name": "Majlis Park",
+                    "code": "MAPA",
+                    "position": {
+                        "lat": 28.7204234,
+                        "lng": 77.1790678
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 0
+                },
+                {
+                    "id": "azadpur",
+                    "name": "Azadpur",
+                    "code": "AZAD",
+                    "position": {
+                        "lat": 28.7035852,
+                        "lng": 77.1659534
+                    },
+                    "depth": "elevated",
+                    "is_interchange": true,
+                    "order": 1,
+                    "interchange_lines": [
+                        "pink_line",
+                        "yellow_line"
+                    ]
+                },
+                {
+                    "id": "shalimar_bagh",
+                    "name": "Shalimar Bagh",
+                    "code": "SHBA",
+                    "position": {
+                        "lat": 28.7009126,
+                        "lng": 77.1602885
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 2
+                },
+                {
+                    "id": "netaji_subash_place",
+                    "name": "Netaji Subash Place",
+                    "code": "NSP",
+                    "position": {
+                        "lat": 28.6967507,
+                        "lng": 77.1466828
+                    },
+                    "depth": "elevated",
+                    "is_interchange": true,
+                    "order": 3,
+                    "interchange_lines": [
+                        "pink_line",
+                        "red_line"
+                    ]
+                },
+                {
+                    "id": "shakurpur",
+                    "name": "Shakurpur",
+                    "code": "SHAK",
+                    "position": {
+                        "lat": 28.6816988,
+                        "lng": 77.1432923
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 4
+                },
+                {
+                    "id": "punjabi_bagh_west",
+                    "name": "Punjabi Bagh West",
+                    "code": "PBW",
+                    "position": {
+                        "lat": 28.6752391,
+                        "lng": 77.1362034
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 5
+                },
+                {
+                    "id": "esi_basai_darapur",
+                    "name": "ESI BASAI DARAPUR",
+                    "code": "EBD",
+                    "position": {
+                        "lat": 28.6580225,
+                        "lng": 77.1240623
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 6
+                },
+                {
+                    "id": "rajouri_garden",
+                    "name": "Rajouri Garden",
+                    "code": "RAGA",
+                    "position": {
+                        "lat": 28.6454319,
+                        "lng": 77.1198674
+                    },
+                    "depth": "elevated",
+                    "is_interchange": true,
+                    "order": 7,
+                    "interchange_lines": [
+                        "blue_line",
+                        "pink_line"
+                    ]
+                },
+                {
+                    "id": "maya_puri",
+                    "name": "Maya Puri",
+                    "code": "MAPU",
+                    "position": {
+                        "lat": 28.6328011,
+                        "lng": 77.1226786
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 8
+                },
+                {
+                    "id": "naraina_vihar",
+                    "name": "Naraina Vihar",
+                    "code": "NAVI",
+                    "position": {
+                        "lat": 28.6234284,
+                        "lng": 77.1288017
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 9
+                },
+                {
+                    "id": "delhi_cantt",
+                    "name": "Delhi Cantt",
+                    "code": "DECA",
+                    "position": {
+                        "lat": 28.6108428,
+                        "lng": 77.1345515
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 10
+                },
+                {
+                    "id": "durgabai_deshmukh_south_campus",
+                    "name": "Durgabai Deshmukh South Campus",
+                    "code": "DDSC",
+                    "position": {
+                        "lat": 28.5926509,
+                        "lng": 77.1560406
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 11
+                },
+                {
+                    "id": "sir_vishweshwaraiah_moti_bagh",
+                    "name": "Sir Vishweshwaraiah Moti Bagh",
+                    "code": "SVMB",
+                    "position": {
+                        "lat": 28.5779995,
+                        "lng": 77.1654876
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 12
+                },
+                {
+                    "id": "bhikaji_cama_place",
+                    "name": "Bhikaji Cama Place",
+                    "code": "BCP",
+                    "position": {
+                        "lat": 28.5706379,
+                        "lng": 77.1785538
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 13
+                },
+                {
+                    "id": "sarojini_nagar",
+                    "name": "Sarojini Nagar",
+                    "code": "SANA",
+                    "position": {
+                        "lat": 28.5743772,
+                        "lng": 77.1849937
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 14
+                },
+                {
+                    "id": "dilli_haat_ina",
+                    "name": "Dilli Haat INA",
+                    "code": "DHI",
+                    "position": {
+                        "lat": 28.5750316,
+                        "lng": 77.198326
+                    },
+                    "depth": "underground",
+                    "is_interchange": true,
+                    "order": 15,
+                    "interchange_lines": [
+                        "pink_line",
+                        "yellow_line"
+                    ]
+                },
+                {
+                    "id": "south_extension",
+                    "name": "South Extension",
+                    "code": "SOEX",
+                    "position": {
+                        "lat": 28.5714793,
+                        "lng": 77.2110196
+                    },
+                    "depth": "underground",
+                    "is_interchange": false,
+                    "order": 16
+                },
+                {
+                    "id": "lajpat_nagar",
+                    "name": "Lajpat Nagar",
+                    "code": "LAJN",
+                    "position": {
+                        "lat": 28.5730451,
+                        "lng": 77.2261615
+                    },
+                    "depth": "underground",
+                    "is_interchange": true,
+                    "order": 17,
+                    "interchange_lines": [
+                        "pink_line",
+                        "violet_line"
+                    ]
+                },
+                {
+                    "id": "vinobapuri",
+                    "name": "Vinobapuri",
+                    "code": "VINO",
+                    "position": {
+                        "lat": 28.5698667,
+                        "lng": 77.2402123
+                    },
+                    "depth": "underground",
+                    "is_interchange": false,
+                    "order": 18
+                },
+                {
+                    "id": "ashram",
+                    "name": "Ashram",
+                    "code": "ASHR",
+                    "position": {
+                        "lat": 28.5735359,
+                        "lng": 77.248515
+                    },
+                    "depth": "underground",
+                    "is_interchange": false,
+                    "order": 19
+                },
+                {
+                    "id": "sarai_kale_khan_nizamuddin",
+                    "name": "Sarai Kale Khan Nizamuddin",
+                    "code": "SKKN",
+                    "position": {
+                        "lat": 28.5893594,
+                        "lng": 77.2469249
+                    },
+                    "depth": "underground",
+                    "is_interchange": false,
+                    "order": 20
+                },
+                {
+                    "id": "mayur_vihar_phase1",
+                    "name": "Mayur Vihar Phase-1",
+                    "code": "MVPH1",
+                    "position": {
+                        "lat": 28.6042071,
+                        "lng": 77.289964
+                    },
+                    "depth": "elevated",
+                    "is_interchange": true,
+                    "order": 21,
+                    "interchange_lines": [
+                        "blue_line",
+                        "pink_line"
+                    ]
+                },
+                {
+                    "id": "mayur_vihar_pocket_i",
+                    "name": "Mayur Vihar Pocket I",
+                    "code": "MVPI",
+                    "position": {
+                        "lat": 28.6050342,
+                        "lng": 77.2854629
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 22
+                },
+                {
+                    "id": "trilokpuri_sanjay_lake",
+                    "name": "Trilokpuri Sanjay Lake",
+                    "code": "TSL",
+                    "position": {
+                        "lat": 28.6116275,
+                        "lng": 77.290956
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 23
+                },
+                {
+                    "id": "vinod_nagar_east",
+                    "name": "Vinod Nagar East",
+                    "code": "VNE",
+                    "position": {
+                        "lat": 28.6177958,
+                        "lng": 77.2983999
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 24
+                },
+                {
+                    "id": "mandawali_west_vinod_nagar",
+                    "name": "Mandawali West Vinod Nagar",
+                    "code": "MWVN",
+                    "position": {
+                        "lat": 28.6205938,
+                        "lng": 77.2998165
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 25
+                },
+                {
+                    "id": "ip_extension",
+                    "name": "IP Extension",
+                    "code": "IPEX",
+                    "position": {
+                        "lat": 28.6302873,
+                        "lng": 77.3035513
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 26
+                },
+                {
+                    "id": "anand_vihar",
+                    "name": "Anand Vihar",
+                    "code": "ANV1",
+                    "position": {
+                        "lat": 28.6462194,
+                        "lng": 77.316805
+                    },
+                    "depth": "elevated",
+                    "is_interchange": true,
+                    "order": 27,
+                    "interchange_lines": [
+                        "blue_line",
+                        "pink_line"
+                    ]
+                },
+                {
+                    "id": "karkar_duma",
+                    "name": "Karkar Duma",
+                    "code": "KARK",
+                    "position": {
+                        "lat": 28.6443237,
+                        "lng": 77.3015087
+                    },
+                    "depth": "elevated",
+                    "is_interchange": true,
+                    "order": 28,
+                    "interchange_lines": [
+                        "blue_line",
+                        "pink_line"
+                    ]
+                },
+                {
+                    "id": "karkarduma_court",
+                    "name": "Karkarduma Court",
+                    "code": "KACO",
+                    "position": {
+                        "lat": 28.6556631,
+                        "lng": 77.2917539
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 29
+                },
+                {
+                    "id": "krishna_nagar",
+                    "name": "Krishna Nagar",
+                    "code": "KRNA",
+                    "position": {
+                        "lat": 28.6583881,
+                        "lng": 77.2858858
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 30
+                },
+                {
+                    "id": "east_azad_nagar",
+                    "name": "East Azad Nagar",
+                    "code": "EAN",
+                    "position": {
+                        "lat": 28.6641131,
+                        "lng": 77.2802184
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 31
+                },
+                {
+                    "id": "welcome",
+                    "name": "Welcome",
+                    "code": "WELC",
+                    "position": {
+                        "lat": 28.6718164,
+                        "lng": 77.2776882
+                    },
+                    "depth": "elevated",
+                    "is_interchange": true,
+                    "order": 32,
+                    "interchange_lines": [
+                        "pink_line",
+                        "red_line"
+                    ]
+                },
+                {
+                    "id": "jaffrabad",
+                    "name": "Jaffrabad",
+                    "code": "JAFF",
+                    "position": {
+                        "lat": 28.6777869,
+                        "lng": 77.2710036
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 33
+                },
+                {
+                    "id": "maujpur_babarpur",
+                    "name": "Maujpur Babarpur",
+                    "code": "MABA",
+                    "position": {
+                        "lat": 28.6894336,
+                        "lng": 77.2745081
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 34
+                },
+                {
+                    "id": "gokulpuri",
+                    "name": "Gokulpuri",
+                    "code": "GOKU",
+                    "position": {
+                        "lat": 28.699741,
+                        "lng": 77.2802184
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 35
+                },
+                {
+                    "id": "johri_enclave",
+                    "name": "Johri Enclave",
+                    "code": "JOEN",
+                    "position": {
+                        "lat": 28.7108971,
+                        "lng": 77.2843207
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 36
+                },
+                {
+                    "id": "shiv_vihar",
+                    "name": "Shiv Vihar",
+                    "code": "SHVI",
+                    "position": {
+                        "lat": 28.7206961,
+                        "lng": 77.28564
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 37
+                }
+            ]
+        },
+        {
+            "id": "rapid_metro",
+            "name": "Rapid Metro",
+            "color": "#00aaff",
+            "stations": [
+                {
+                    "id": "sector_5566_rapid_metro",
+                    "name": "Sector 55-66 (Rapid Metro)",
+                    "code": "S55",
+                    "position": {
+                        "lat": 28.4261644,
+                        "lng": 77.1074474
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 0
+                },
+                {
+                    "id": "sector_54_chowk_rapid_metro",
+                    "name": "Sector 54 Chowk (Rapid Metro)",
+                    "code": "S54CH",
+                    "position": {
+                        "lat": 28.4298081,
+                        "lng": 77.1071995
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 1
+                },
+                {
+                    "id": "sector_5354_rapid_metro",
+                    "name": "Sector 53-54 (Rapid Metro)",
+                    "code": "S53",
+                    "position": {
+                        "lat": 28.4442257,
+                        "lng": 77.1044373
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 2
+                },
+                {
+                    "id": "sector_4243_rapid_metro",
+                    "name": "Sector 42-43 (Rapid Metro)",
+                    "code": "S42",
+                    "position": {
+                        "lat": 28.45682,
+                        "lng": 77.1002764
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 3
+                },
+                {
+                    "id": "dlf_phase_1_rapid_metro",
+                    "name": "DLF Phase 1 (Rapid Metro)",
+                    "code": "DP1",
+                    "position": {
+                        "lat": 28.4713117,
+                        "lng": 77.0979392
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 4
+                },
+                {
+                    "id": "dlf_phase_2_rapid_metro",
+                    "name": "DLF Phase 2 (Rapid Metro)",
+                    "code": "DP2",
+                    "position": {
+                        "lat": 28.4858455,
+                        "lng": 77.0923139
+                    },
+                    "depth": "elevated",
+                    "is_interchange": true,
+                    "order": 5
+                },
+                {
+                    "id": "belvedere_towers_rapid_metro",
+                    "name": "Belvedere Towers (Rapid Metro)",
+                    "code": "BETO",
+                    "position": {
+                        "lat": 28.4919465,
+                        "lng": 77.0905972
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 6
+                },
+                {
+                    "id": "cyber_city_rapid_metro",
+                    "name": "Cyber City (Rapid Metro)",
+                    "code": "CYCI",
+                    "position": {
+                        "lat": 28.4968308,
+                        "lng": 77.0914448
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 7
+                },
+                {
+                    "id": "dlf_phase_3_rapid_metro",
+                    "name": "DLF Phase 3 (Rapid Metro)",
+                    "code": "DP3",
+                    "position": {
+                        "lat": 28.4941246,
+                        "lng": 77.0928074
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 8
+                },
+                {
+                    "id": "sikandarpur",
+                    "name": "Sikandarpur",
+                    "code": "SIKA",
+                    "position": {
+                        "lat": 28.4829417,
+                        "lng": 77.0834729
+                    },
+                    "depth": "elevated",
+                    "is_interchange": true,
+                    "order": 9,
+                    "interchange_lines": [
+                        "rapid_metro",
+                        "yellow_line"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "red_line",
+            "name": "Red Line",
+            "color": "#E53E3E",
+            "stations": [
+                {
+                    "id": "shaheed_sthalnew_bus_adda",
+                    "name": "Shaheed Sthal(New Bus Adda)",
+                    "code": "SHSTA",
+                    "position": {
+                        "lat": 28.6703732,
+                        "lng": 77.4116686
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 0
+                },
+                {
+                    "id": "hindon_river",
+                    "name": "Hindon River",
+                    "code": "HIRI",
+                    "position": {
+                        "lat": 28.6725644,
+                        "lng": 77.3996868
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 1
+                },
+                {
+                    "id": "arthala",
+                    "name": "Arthala",
+                    "code": "ARTH",
+                    "position": {
+                        "lat": 28.6762722,
+                        "lng": 77.3910099
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 2
+                },
+                {
+                    "id": "mohan_nagar",
+                    "name": "Mohan Nagar",
+                    "code": "MON1",
+                    "position": {
+                        "lat": 28.6772946,
+                        "lng": 77.382319
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 3
+                },
+                {
+                    "id": "shyam_park",
+                    "name": "Shyam park",
+                    "code": "SHP1",
+                    "position": {
+                        "lat": 28.6780091,
+                        "lng": 77.3680821
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 4
+                },
+                {
+                    "id": "major_mohit_sharma",
+                    "name": "Major Mohit Sharma",
+                    "code": "MMS",
+                    "position": {
+                        "lat": 28.6773863,
+                        "lng": 77.3579882
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 5
+                },
+                {
+                    "id": "raj_bagh",
+                    "name": "Raj Bagh",
+                    "code": "RABA",
+                    "position": {
+                        "lat": 28.67674,
+                        "lng": 77.3478004
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 6
+                },
+                {
+                    "id": "shaheed_nagar",
+                    "name": "Shaheed Nagar",
+                    "code": "SHNA",
+                    "position": {
+                        "lat": 28.6760149,
+                        "lng": 77.3344323
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 7
+                },
+                {
+                    "id": "dilshad_garden",
+                    "name": "Dilshad Garden",
+                    "code": "DIGA",
+                    "position": {
+                        "lat": 28.6751478,
+                        "lng": 77.3193932
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 8
+                },
+                {
+                    "id": "jhil_mil",
+                    "name": "Jhil Mil",
+                    "code": "JHMI",
+                    "position": {
+                        "lat": 28.6750532,
+                        "lng": 77.3093311
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 9
+                },
+                {
+                    "id": "mansarovar_park",
+                    "name": "Mansarovar Park",
+                    "code": "MAP1",
+                    "position": {
+                        "lat": 28.6747695,
+                        "lng": 77.3022877
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 10
+                },
+                {
+                    "id": "shahdara",
+                    "name": "Shahdara",
+                    "code": "SHAH",
+                    "position": {
+                        "lat": 28.6728778,
+                        "lng": 77.2876439
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 11
+                },
+                {
+                    "id": "welcome",
+                    "name": "Welcome",
+                    "code": "WELC",
+                    "position": {
+                        "lat": 28.6718164,
+                        "lng": 77.2776882
+                    },
+                    "depth": "elevated",
+                    "is_interchange": true,
+                    "order": 12,
+                    "interchange_lines": [
+                        "pink_line",
+                        "red_line"
+                    ]
+                },
+                {
+                    "id": "seelampur",
+                    "name": "Seelampur",
+                    "code": "SEEL",
+                    "position": {
+                        "lat": 28.6718531,
+                        "lng": 77.2664777
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 13
+                },
+                {
+                    "id": "shastri_park",
+                    "name": "Shastri Park",
+                    "code": "SHP2",
+                    "position": {
+                        "lat": 28.6684513,
+                        "lng": 77.2498055
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 14
+                },
+                {
+                    "id": "kashmere_gate",
+                    "name": "Kashmere Gate",
+                    "code": "KAGA",
+                    "position": {
+                        "lat": 28.6677408,
+                        "lng": 77.2227767
+                    },
+                    "depth": "underground",
+                    "is_interchange": true,
+                    "order": 15,
+                    "interchange_lines": [
+                        "red_line",
+                        "violet_line",
+                        "yellow_line"
+                    ]
+                },
+                {
+                    "id": "tis_hazari",
+                    "name": "Tis Hazari",
+                    "code": "TIHA",
+                    "position": {
+                        "lat": 28.6675417,
+                        "lng": 77.2149003
+                    },
+                    "depth": "underground",
+                    "is_interchange": false,
+                    "order": 16
+                },
+                {
+                    "id": "pul_bangash",
+                    "name": "Pul Bangash",
+                    "code": "PUBAN",
+                    "position": {
+                        "lat": 28.6676705,
+                        "lng": 77.2050749
+                    },
+                    "depth": "underground",
+                    "is_interchange": false,
+                    "order": 17
+                },
+                {
+                    "id": "pratap_nagar",
+                    "name": "Pratap Nagar",
+                    "code": "PRNA",
+                    "position": {
+                        "lat": 28.6675299,
+                        "lng": 77.1948756
+                    },
+                    "depth": "underground",
+                    "is_interchange": false,
+                    "order": 18
+                },
+                {
+                    "id": "shastri_nagar",
+                    "name": "Shastri Nagar",
+                    "code": "SHN1",
+                    "position": {
+                        "lat": 28.6717701,
+                        "lng": 77.1797369
+                    },
+                    "depth": "underground",
+                    "is_interchange": false,
+                    "order": 19
+                },
+                {
+                    "id": "inderlok",
+                    "name": "Inderlok",
+                    "code": "INDE",
+                    "position": {
+                        "lat": 28.673562,
+                        "lng": 77.173562
+                    },
+                    "depth": "underground",
+                    "is_interchange": true,
+                    "order": 20,
+                    "interchange_lines": [
+                        "green_line",
+                        "red_line"
+                    ]
+                },
+                {
+                    "id": "kanhaiya_nagar",
+                    "name": "Kanhaiya Nagar",
+                    "code": "KANA",
+                    "position": {
+                        "lat": 28.6799219,
+                        "lng": 77.1662803
+                    },
+                    "depth": "underground",
+                    "is_interchange": false,
+                    "order": 21
+                },
+                {
+                    "id": "keshav_puram",
+                    "name": "Keshav Puram",
+                    "code": "KEPU",
+                    "position": {
+                        "lat": 28.6885885,
+                        "lng": 77.1604465
+                    },
+                    "depth": "underground",
+                    "is_interchange": false,
+                    "order": 22
+                },
+                {
+                    "id": "netaji_subash_place",
+                    "name": "Netaji Subash Place",
+                    "code": "NSP",
+                    "position": {
+                        "lat": 28.6967507,
+                        "lng": 77.1466828
+                    },
+                    "depth": "elevated",
+                    "is_interchange": true,
+                    "order": 23,
+                    "interchange_lines": [
+                        "pink_line",
+                        "red_line"
+                    ]
+                },
+                {
+                    "id": "kohat_enclave",
+                    "name": "Kohat Enclave",
+                    "code": "KOEN",
+                    "position": {
+                        "lat": 28.6981793,
+                        "lng": 77.1415298
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 24
+                },
+                {
+                    "id": "pitam_pura",
+                    "name": "Pitam Pura",
+                    "code": "PIPU",
+                    "position": {
+                        "lat": 28.7006506,
+                        "lng": 77.1393891
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 25
+                },
+                {
+                    "id": "rohini_east",
+                    "name": "Rohini East",
+                    "code": "ROEA",
+                    "position": {
+                        "lat": 28.7041116,
+                        "lng": 77.1328681
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 26
+                },
+                {
+                    "id": "rohini_west",
+                    "name": "Rohini West",
+                    "code": "ROWE",
+                    "position": {
+                        "lat": 28.7093939,
+                        "lng": 77.1235227
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 27
+                },
+                {
+                    "id": "rithala",
+                    "name": "Rithala",
+                    "code": "RITH",
+                    "position": {
+                        "lat": 28.7093939,
+                        "lng": 77.1235227
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 28
+                }
+            ]
+        },
+        {
+            "id": "violet_line",
+            "name": "Violet Line",
+            "color": "#8B00FF",
+            "stations": [
+                {
+                    "id": "kashmere_gate",
+                    "name": "Kashmere Gate",
+                    "code": "KAGA",
+                    "position": {
+                        "lat": 28.6677408,
+                        "lng": 77.2227767
+                    },
+                    "depth": "underground",
+                    "is_interchange": true,
+                    "order": 0,
+                    "interchange_lines": [
+                        "red_line",
+                        "violet_line",
+                        "yellow_line"
+                    ]
+                },
+                {
+                    "id": "lal_quila",
+                    "name": "Lal Quila",
+                    "code": "LAQU",
+                    "position": {
+                        "lat": 28.6575028,
+                        "lng": 77.2365198
+                    },
+                    "depth": "underground",
+                    "is_interchange": false,
+                    "order": 1
+                },
+                {
+                    "id": "jama_masjid",
+                    "name": "Jama Masjid",
+                    "code": "JAMA",
+                    "position": {
+                        "lat": 28.6490535,
+                        "lng": 77.2383767
+                    },
+                    "depth": "underground",
+                    "is_interchange": false,
+                    "order": 2
+                },
+                {
+                    "id": "delhi_gate",
+                    "name": "Delhi Gate",
+                    "code": "DEGA",
+                    "position": {
+                        "lat": 28.6401774,
+                        "lng": 77.2413826
+                    },
+                    "depth": "underground",
+                    "is_interchange": false,
+                    "order": 3
+                },
+                {
+                    "id": "ito",
+                    "name": "ITO",
+                    "code": "ITO",
+                    "position": {
+                        "lat": 28.630784,
+                        "lng": 77.2423264
+                    },
+                    "depth": "underground",
+                    "is_interchange": false,
+                    "order": 4
+                },
+                {
+                    "id": "mandi_house",
+                    "name": "Mandi House",
+                    "code": "MAHO",
+                    "position": {
+                        "lat": 28.625698,
+                        "lng": 77.2354326
+                    },
+                    "depth": "underground",
+                    "is_interchange": true,
+                    "order": 5,
+                    "interchange_lines": [
+                        "blue_line",
+                        "violet_line"
+                    ]
+                },
+                {
+                    "id": "janpath",
+                    "name": "Janpath",
+                    "code": "JANP",
+                    "position": {
+                        "lat": 28.6230896,
+                        "lng": 77.2207386
+                    },
+                    "depth": "underground",
+                    "is_interchange": false,
+                    "order": 6
+                },
+                {
+                    "id": "central_secretariat",
+                    "name": "Central Secretariat",
+                    "code": "CESE",
+                    "position": {
+                        "lat": 28.6165816,
+                        "lng": 77.2156871
+                    },
+                    "depth": "underground",
+                    "is_interchange": true,
+                    "order": 7,
+                    "interchange_lines": [
+                        "violet_line",
+                        "yellow_line"
+                    ]
+                },
+                {
+                    "id": "khan_market",
+                    "name": "Khan Market",
+                    "code": "KHMA",
+                    "position": {
+                        "lat": 28.6045949,
+                        "lng": 77.2251215
+                    },
+                    "depth": "underground",
+                    "is_interchange": false,
+                    "order": 8
+                },
+                {
+                    "id": "jln_stadium",
+                    "name": "JLN Stadium",
+                    "code": "JLST",
+                    "position": {
+                        "lat": 28.5912917,
+                        "lng": 77.2329129
+                    },
+                    "depth": "underground",
+                    "is_interchange": false,
+                    "order": 9
+                },
+                {
+                    "id": "jangpura",
+                    "name": "Jangpura",
+                    "code": "JANG",
+                    "position": {
+                        "lat": 28.5818426,
+                        "lng": 77.2377094
+                    },
+                    "depth": "underground",
+                    "is_interchange": false,
+                    "order": 10
+                },
+                {
+                    "id": "lajpat_nagar",
+                    "name": "Lajpat Nagar",
+                    "code": "LAJN",
+                    "position": {
+                        "lat": 28.5730451,
+                        "lng": 77.2261615
+                    },
+                    "depth": "underground",
+                    "is_interchange": true,
+                    "order": 11,
+                    "interchange_lines": [
+                        "pink_line",
+                        "violet_line"
+                    ]
+                },
+                {
+                    "id": "moolchand",
+                    "name": "Moolchand",
+                    "code": "MOOL",
+                    "position": {
+                        "lat": 28.5593721,
+                        "lng": 77.2375584
+                    },
+                    "depth": "underground",
+                    "is_interchange": false,
+                    "order": 12
+                },
+                {
+                    "id": "kailash_colony",
+                    "name": "Kailash Colony",
+                    "code": "KACO",
+                    "position": {
+                        "lat": 28.5539754,
+                        "lng": 77.2419384
+                    },
+                    "depth": "underground",
+                    "is_interchange": false,
+                    "order": 13
+                },
+                {
+                    "id": "nehru_place",
+                    "name": "Nehru Place",
+                    "code": "NEPL",
+                    "position": {
+                        "lat": 28.5505225,
+                        "lng": 77.2507431
+                    },
+                    "depth": "underground",
+                    "is_interchange": false,
+                    "order": 14
+                },
+                {
+                    "id": "kalkaji_mandir",
+                    "name": "Kalkaji Mandir",
+                    "code": "KAM1",
+                    "position": {
+                        "lat": 28.5483714,
+                        "lng": 77.2568283
+                    },
+                    "depth": "underground",
+                    "is_interchange": true,
+                    "order": 15,
+                    "interchange_lines": [
+                        "magenta_line",
+                        "violet_line"
+                    ]
+                },
+                {
+                    "id": "govind_puri",
+                    "name": "Govind Puri",
+                    "code": "GOPU",
+                    "position": {
+                        "lat": 28.544434,
+                        "lng": 77.2637447
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 16
+                },
+                {
+                    "id": "okhla",
+                    "name": "Okhla",
+                    "code": "OKHL",
+                    "position": {
+                        "lat": 28.5434953,
+                        "lng": 77.2710321
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 17
+                },
+                {
+                    "id": "jasola",
+                    "name": "Jasola",
+                    "code": "JASO",
+                    "position": {
+                        "lat": 28.5367413,
+                        "lng": 77.2818816
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 18
+                },
+                {
+                    "id": "sarita_vihar",
+                    "name": "Sarita Vihar",
+                    "code": "SAVI",
+                    "position": {
+                        "lat": 28.5313513,
+                        "lng": 77.2852559
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 19
+                },
+                {
+                    "id": "mohan_estate",
+                    "name": "Mohan Estate",
+                    "code": "MOES",
+                    "position": {
+                        "lat": 28.5209431,
+                        "lng": 77.2926336
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 20
+                },
+                {
+                    "id": "tughlakabad",
+                    "name": "Tughlakabad",
+                    "code": "TUGH",
+                    "position": {
+                        "lat": 28.50013,
+                        "lng": 77.3009095
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 21
+                },
+                {
+                    "id": "badarpur_border",
+                    "name": "Badarpur Border",
+                    "code": "BABO",
+                    "position": {
+                        "lat": 28.4916247,
+                        "lng": 77.3039182
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 22
+                },
+                {
+                    "id": "sarai",
+                    "name": "Sarai",
+                    "code": "SARA",
+                    "position": {
+                        "lat": 28.4764317,
+                        "lng": 77.3087028
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 23
+                },
+                {
+                    "id": "nhpc_chowk",
+                    "name": "N.H.P.C. Chowk",
+                    "code": "NHCH",
+                    "position": {
+                        "lat": 28.4602484,
+                        "lng": 77.3103359
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 24
+                },
+                {
+                    "id": "mewala_maharajpur",
+                    "name": "Mewala Maharajpur",
+                    "code": "MEMA",
+                    "position": {
+                        "lat": 28.4457061,
+                        "lng": 77.3102059
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 25
+                },
+                {
+                    "id": "sector_28_faridabad",
+                    "name": "Sector 28 Faridabad",
+                    "code": "FARI28",
+                    "position": {
+                        "lat": 28.4360442,
+                        "lng": 77.311785
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 26
+                },
+                {
+                    "id": "badkal_mor",
+                    "name": "Badkal Mor",
+                    "code": "BADM",
+                    "position": {
+                        "lat": 28.4215571,
+                        "lng": 77.3126572
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 27
+                },
+                {
+                    "id": "old_faridabad",
+                    "name": "Old Faridabad",
+                    "code": "FAROLD",
+                    "position": {
+                        "lat": 28.4054256,
+                        "lng": 77.3124785
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 28
+                },
+                {
+                    "id": "neelam_chowk_ajronda",
+                    "name": "Neelam Chowk Ajronda",
+                    "code": "NCA",
+                    "position": {
+                        "lat": 28.3979163,
+                        "lng": 77.3126011
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 29
+                },
+                {
+                    "id": "bata_chowk",
+                    "name": "Bata Chowk",
+                    "code": "BACH",
+                    "position": {
+                        "lat": 28.3843385,
+                        "lng": 77.3138175
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 30
+                },
+                {
+                    "id": "escorts_mujesar",
+                    "name": "Escorts Mujesar",
+                    "code": "ESMU",
+                    "position": {
+                        "lat": 28.3745214,
+                        "lng": 77.3152495
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 31
+                },
+                {
+                    "id": "sant_surdas_sihi",
+                    "name": "Sant Surdas - Sihi",
+                    "code": "SSS",
+                    "position": {
+                        "lat": 28.3545435,
+                        "lng": 77.3175655
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 32
+                },
+                {
+                    "id": "raja_nahar_singh",
+                    "name": "Raja Nahar Singh",
+                    "code": "RNS",
+                    "position": {
+                        "lat": 28.3411659,
+                        "lng": 77.3169455
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 33
+                }
+            ]
+        },
+        {
+            "id": "yellow_line",
+            "name": "Yellow Line",
+            "color": "#FFFF00",
+            "stations": [
+                {
+                    "id": "samaypur_badli",
+                    "name": "Samaypur Badli",
+                    "code": "SABA",
+                    "position": {
+                        "lat": 28.7213357,
+                        "lng": 77.1473022
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 0
+                },
+                {
+                    "id": "rohini_sector_1819",
+                    "name": "Rohini Sector 18-19",
+                    "code": "RS11",
+                    "position": {
+                        "lat": 28.7361369,
+                        "lng": 77.1466093
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 1
+                },
+                {
+                    "id": "haiderpur_badli_mor",
+                    "name": "Haiderpur Badli Mor",
+                    "code": "HBM",
+                    "position": {
+                        "lat": 28.730257,
+                        "lng": 77.1551925
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 2
+                },
+                {
+                    "id": "jahangirpuri",
+                    "name": "Jahangirpuri",
+                    "code": "JAHA",
+                    "position": {
+                        "lat": 28.7237877,
+                        "lng": 77.1644032
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 3
+                },
+                {
+                    "id": "adarsh_nagar",
+                    "name": "Adarsh Nagar",
+                    "code": "ADNA",
+                    "position": {
+                        "lat": 28.7171265,
+                        "lng": 77.1714075
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 4
+                },
+                {
+                    "id": "azadpur",
+                    "name": "Azadpur",
+                    "code": "AZAD",
+                    "position": {
+                        "lat": 28.7035852,
+                        "lng": 77.1659534
+                    },
+                    "depth": "elevated",
+                    "is_interchange": true,
+                    "order": 5,
+                    "interchange_lines": [
+                        "pink_line",
+                        "yellow_line"
+                    ]
+                },
+                {
+                    "id": "model_town",
+                    "name": "Model Town",
+                    "code": "MOTO",
+                    "position": {
+                        "lat": 28.7055501,
+                        "lng": 77.1922335
+                    },
+                    "depth": "underground",
+                    "is_interchange": false,
+                    "order": 6
+                },
+                {
+                    "id": "guru_tegh_bahadur_nagar",
+                    "name": "Guru Tegh Bahadur Nagar",
+                    "code": "GTBN",
+                    "position": {
+                        "lat": 28.7006959,
+                        "lng": 77.208626
+                    },
+                    "depth": "underground",
+                    "is_interchange": false,
+                    "order": 7
+                },
+                {
+                    "id": "vishwavidyalaya",
+                    "name": "Vishwavidyalaya",
+                    "code": "VISH",
+                    "position": {
+                        "lat": 28.6960076,
+                        "lng": 77.2180356
+                    },
+                    "depth": "underground",
+                    "is_interchange": false,
+                    "order": 8
+                },
+                {
+                    "id": "vidhan_sabha",
+                    "name": "Vidhan Sabha",
+                    "code": "VISA",
+                    "position": {
+                        "lat": 28.6869672,
+                        "lng": 77.2232204
+                    },
+                    "depth": "underground",
+                    "is_interchange": false,
+                    "order": 9
+                },
+                {
+                    "id": "civil_lines",
+                    "name": "Civil Lines",
+                    "code": "CILI",
+                    "position": {
+                        "lat": 28.6753147,
+                        "lng": 77.2291734
+                    },
+                    "depth": "underground",
+                    "is_interchange": false,
+                    "order": 10
+                },
+                {
+                    "id": "kashmere_gate",
+                    "name": "Kashmere Gate",
+                    "code": "KAGA",
+                    "position": {
+                        "lat": 28.6677408,
+                        "lng": 77.2227767
+                    },
+                    "depth": "underground",
+                    "is_interchange": true,
+                    "order": 11,
+                    "interchange_lines": [
+                        "red_line",
+                        "violet_line",
+                        "yellow_line"
+                    ]
+                },
+                {
+                    "id": "chandni_chowk",
+                    "name": "Chandni Chowk",
+                    "code": "CHCH",
+                    "position": {
+                        "lat": 28.658917,
+                        "lng": 77.2276058
+                    },
+                    "depth": "underground",
+                    "is_interchange": false,
+                    "order": 12
+                },
+                {
+                    "id": "chawri_bazar",
+                    "name": "Chawri Bazar",
+                    "code": "CHBA",
+                    "position": {
+                        "lat": 28.6490974,
+                        "lng": 77.2212445
+                    },
+                    "depth": "underground",
+                    "is_interchange": false,
+                    "order": 13
+                },
+                {
+                    "id": "new_delhi",
+                    "name": "New Delhi",
+                    "code": "NDLS",
+                    "position": {
+                        "lat": 28.6432,
+                        "lng": 77.2232
+                    },
+                    "depth": "underground",
+                    "is_interchange": true,
+                    "order": 14,
+                    "interchange_lines": [
+                        "airport_express",
+                        "yellow_line"
+                    ]
+                },
+                {
+                    "id": "rajiv_chowk",
+                    "name": "Rajiv Chowk",
+                    "code": "RACH",
+                    "position": {
+                        "lat": 28.634318,
+                        "lng": 77.2150304
+                    },
+                    "depth": "underground",
+                    "is_interchange": true,
+                    "order": 15,
+                    "interchange_lines": [
+                        "blue_line",
+                        "yellow_line"
+                    ]
+                },
+                {
+                    "id": "patel_chowk",
+                    "name": "Patel Chowk",
+                    "code": "PATC",
+                    "position": {
+                        "lat": 28.6206049,
+                        "lng": 77.2060487
+                    },
+                    "depth": "underground",
+                    "is_interchange": false,
+                    "order": 16
+                },
+                {
+                    "id": "central_secretariat",
+                    "name": "Central Secretariat",
+                    "code": "CESE",
+                    "position": {
+                        "lat": 28.6165816,
+                        "lng": 77.2156871
+                    },
+                    "depth": "underground",
+                    "is_interchange": true,
+                    "order": 17,
+                    "interchange_lines": [
+                        "violet_line",
+                        "yellow_line"
+                    ]
+                },
+                {
+                    "id": "udyog_bhawan",
+                    "name": "Udyog Bhawan",
+                    "code": "UDBH",
+                    "position": {
+                        "lat": 28.6100039,
+                        "lng": 77.2067794
+                    },
+                    "depth": "underground",
+                    "is_interchange": false,
+                    "order": 18
+                },
+                {
+                    "id": "lok_kalyan_marg",
+                    "name": "Lok Kalyan Marg",
+                    "code": "LKM",
+                    "position": {
+                        "lat": 28.6012835,
+                        "lng": 77.207239
+                    },
+                    "depth": "underground",
+                    "is_interchange": false,
+                    "order": 19
+                },
+                {
+                    "id": "jorbagh",
+                    "name": "Jorbagh",
+                    "code": "JORB",
+                    "position": {
+                        "lat": 28.5853209,
+                        "lng": 77.2065404
+                    },
+                    "depth": "underground",
+                    "is_interchange": false,
+                    "order": 20
+                },
+                {
+                    "id": "dilli_haat_ina",
+                    "name": "Dilli Haat INA",
+                    "code": "DHI",
+                    "position": {
+                        "lat": 28.5750316,
+                        "lng": 77.198326
+                    },
+                    "depth": "underground",
+                    "is_interchange": true,
+                    "order": 21,
+                    "interchange_lines": [
+                        "pink_line",
+                        "yellow_line"
+                    ]
+                },
+                {
+                    "id": "aiims",
+                    "name": "AIIMS",
+                    "code": "AIIMS",
+                    "position": {
+                        "lat": 28.5665316,
+                        "lng": 77.2003755
+                    },
+                    "depth": "underground",
+                    "is_interchange": false,
+                    "order": 22
+                },
+                {
+                    "id": "green_park",
+                    "name": "Green Park",
+                    "code": "GRPA",
+                    "position": {
+                        "lat": 28.5575296,
+                        "lng": 77.2013267
+                    },
+                    "depth": "underground",
+                    "is_interchange": false,
+                    "order": 23
+                },
+                {
+                    "id": "hauz_khas",
+                    "name": "Hauz Khas",
+                    "code": "HAKH",
+                    "position": {
+                        "lat": 28.54255,
+                        "lng": 77.2055767
+                    },
+                    "depth": "underground",
+                    "is_interchange": true,
+                    "order": 24,
+                    "interchange_lines": [
+                        "magenta_line",
+                        "yellow_line"
+                    ]
+                },
+                {
+                    "id": "malviya_nagar",
+                    "name": "Malviya Nagar",
+                    "code": "MANA",
+                    "position": {
+                        "lat": 28.5257953,
+                        "lng": 77.195306
+                    },
+                    "depth": "underground",
+                    "is_interchange": false,
+                    "order": 25
+                },
+                {
+                    "id": "saket",
+                    "name": "Saket",
+                    "code": "SAKE",
+                    "position": {
+                        "lat": 28.5169688,
+                        "lng": 77.1847946
+                    },
+                    "depth": "underground",
+                    "is_interchange": false,
+                    "order": 26
+                },
+                {
+                    "id": "qutab_minar",
+                    "name": "Qutab Minar",
+                    "code": "QUMI",
+                    "position": {
+                        "lat": 28.5169688,
+                        "lng": 77.1847946
+                    },
+                    "depth": "underground",
+                    "is_interchange": false,
+                    "order": 27
+                },
+                {
+                    "id": "chhattarpur",
+                    "name": "Chhattarpur",
+                    "code": "CHHA",
+                    "position": {
+                        "lat": 28.5076154,
+                        "lng": 77.1688612
+                    },
+                    "depth": "underground",
+                    "is_interchange": false,
+                    "order": 28
+                },
+                {
+                    "id": "sultanpur",
+                    "name": "Sultanpur",
+                    "code": "SULT",
+                    "position": {
+                        "lat": 28.4997812,
+                        "lng": 77.154092
+                    },
+                    "depth": "underground",
+                    "is_interchange": false,
+                    "order": 29
+                },
+                {
+                    "id": "ghitorni",
+                    "name": "Ghitorni",
+                    "code": "GHIT",
+                    "position": {
+                        "lat": 28.4912449,
+                        "lng": 77.1328032
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 30
+                },
+                {
+                    "id": "arjan_garh",
+                    "name": "Arjan Garh",
+                    "code": "ARGA",
+                    "position": {
+                        "lat": 28.4814798,
+                        "lng": 77.1219259
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 31
+                },
+                {
+                    "id": "guru_dronacharya",
+                    "name": "Guru Dronacharya",
+                    "code": "GUDR",
+                    "position": {
+                        "lat": 28.4811582,
+                        "lng": 77.0895602
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 32
+                },
+                {
+                    "id": "sikandarpur",
+                    "name": "Sikandarpur",
+                    "code": "SIKA",
+                    "position": {
+                        "lat": 28.4829417,
+                        "lng": 77.0834729
+                    },
+                    "depth": "elevated",
+                    "is_interchange": true,
+                    "order": 33,
+                    "interchange_lines": [
+                        "rapid_metro",
+                        "yellow_line"
+                    ]
+                },
+                {
+                    "id": "mg_road",
+                    "name": "MG Road",
+                    "code": "MGRO",
+                    "position": {
+                        "lat": 28.4803395,
+                        "lng": 77.0676393
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 34
+                },
+                {
+                    "id": "iffco_chowk",
+                    "name": "IFFCO Chowk",
+                    "code": "IFCH",
+                    "position": {
+                        "lat": 28.4650761,
+                        "lng": 77.0630821
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 35
+                },
+                {
+                    "id": "huda_city_centre",
+                    "name": "Huda City Centre",
+                    "code": "HCC",
+                    "position": {
+                        "lat": 28.4650761,
+                        "lng": 77.0630821
+                    },
+                    "depth": "elevated",
+                    "is_interchange": false,
+                    "order": 36
+                }
+            ]
+        }
+    ]
+}

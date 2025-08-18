@@ -1,6 +1,5 @@
 node_modules/
 dist/
-dmrc.json
 assets/
 backup/
 .env.local

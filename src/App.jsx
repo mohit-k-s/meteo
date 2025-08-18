@@ -24,16 +24,16 @@ function App() {
   useEffect(() => {
     const loadMetroData = async () => {
       try {
-        // Try to fetch from API endpoint that reads process.env
-        const response = await fetch('/api/metro-data')
+        // Load data directly from bundled JSON file
+        const response = await fetch('/dmrc.json')
         if (response.ok) {
           const data = await response.json()
           setMetroData(data)
           setLoading(false)
           return
         }
-        setMetroData(data)
-        setLoading(false)
+        
+        throw new Error(`Failed to load metro data: ${response.status}`)
       } catch (err) {
         setError(err.message)
         setLoading(false)

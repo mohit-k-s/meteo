@@ -4,9 +4,7 @@
   "description": "Intelligent metro navigation PWA for real-time GPS tracking",
   "main": "index.js",
   "scripts": {
-    "dev": "concurrently \"node server.js\" \"vite\"",
-    "dev:client": "vite",
-    "dev:server": "node server.js",
+    "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
     "serve": "serve dist"
@@ -21,9 +19,6 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "concurrently": "^8.2.2",
-    "dotenv": "^16.3.1",
-    "express": "^4.18.2",
     "leaflet": "^1.9.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
