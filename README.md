@@ -4,7 +4,6 @@
 
 The name is not at all derived from météo (which is french for weather) . I just liked the name..
 
-
 Meteo is a hobby project , I am still working on data about elevation and stuff but the core is working ig.
 
 
@@ -68,8 +67,8 @@ I don't think i will need that
 - React and Leaflet.js communities
 
 ## Note for the file dmrc.json
-This was populated via scipts and is available as a public infrastructure information. I used google maps and corrected each and every coordinate. These are all correct as of now.
-Hope it helps someone else 
+This was populated via scripts and is available as a public infrastructure information. I used google maps and corrected each and every coordinate. These are all correct as of now.
+Hope it helps someone else.
 
 
 ---
