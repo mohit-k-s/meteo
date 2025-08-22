@@ -3,7 +3,6 @@
     "network_name": "Delhi Metro Rail Corporation",
     "last_updated": "2025-08-18T07:31:11.443Z",
     "total_lines": 10,
-    "total_stations": 284,
     "lines": [
         {
             "id": "airport_express",
